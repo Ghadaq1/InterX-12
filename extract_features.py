@@ -1,20 +1,25 @@
+
+"""" Demo script for extracting acoustic features from interjection audio clips.
+Currently set up to process **Surprise/Shock** clips as an example.
+The workflow can be extended to other labels and languages.""""
+
 import parselmouth
 import os
 import numpy as np
 import pandas as pd
 
-# ===== FOLDER SETTINGS =====
-folder = r"C:\Users\user\Desktop\TESTBATCH\SS"  # folder containing your WAV clips
-output_csv = r"C:\Users\user\Desktop\TESTBATCH\SS\Suprise_results.csv"
 
-# ===== DATAFRAME SETUP =====
+folder = input("Enter folder containing audio clips: ")
+output_csv = input("Enter path to save CSV: ")
+
+
 columns = ["File Name", "Duration(s)", "Mean Pitch (Hz)", "SD Pitch (Hz)",
            "Mean Intensity (dB)", "HNR", "Vowel Type", "Consonant Type",
            "Number of Repeats", "Rhythm", "Label", "Context"]
 
 df = pd.DataFrame(columns=columns)
 
-# ===== LOOP THROUGH CLIPS =====
+# LOOP 
 for file in os.listdir(folder):
     if file.lower().endswith(".wav"):
         path = os.path.join(folder, file)
@@ -26,7 +31,7 @@ for file in os.listdir(folder):
         # Pitch (mean & SD)
         pitch = sound.to_pitch(time_step=0.01, pitch_floor=75, pitch_ceiling=300)
         pitch_values = pitch.selected_array['frequency']
-        pitch_values = pitch_values[pitch_values != 0]  # remove unvoiced
+        pitch_values = pitch_values[pitch_values != 0]  
         if len(pitch_values) > 0:
             mean_pitch = np.mean(pitch_values)
             sd_pitch = np.std(pitch_values)
@@ -48,22 +53,23 @@ for file in os.listdir(folder):
         if len(hnr_values) > 0:
             hnr_mean = np.mean(hnr_values)
         else:
-            hnr_mean = np.nan  # flag as invalid
+            hnr_mean = np.nan  
 
         # PLACEHOLDERS for manual input
         vowel_type = ""
         consonant_type = ""
         number_of_repeats = ""
         rhythm = ""
-        label = "Suprise/Shock"
+        label = "Surprise/Shock" #example
         context = ""
 
-        # Append row to dataframe
+      
         df = pd.concat([df, pd.DataFrame([[file, duration, mean_pitch, sd_pitch,
                                            mean_intensity, hnr_mean, vowel_type, consonant_type,
                                            number_of_repeats, rhythm, label, context]],
                                          columns=columns)], ignore_index=True)
 
-# ===== SAVE CSV =====
+
 df.to_csv(output_csv, index=False)
 print("CSV saved to:", output_csv)
+
