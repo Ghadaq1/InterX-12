@@ -2,73 +2,74 @@
 Currently set up to process **Surprise/Shock** clips as an example.
 The workflow can be extended to other labels and languages.""""
 
-import parselmouth
 import os
+import librosa
 import numpy as np
 import pandas as pd
-
+import parselmouth
 
 folder = input("Enter folder containing audio clips: ")
 output_csv = input("Enter path to save CSV: ")
 
+all_results = []
 
-columns = ["File Name", "Duration(s)", "Mean Pitch (Hz)", "SD Pitch (Hz)",
-           "Mean Intensity (dB)", "HNR", "Vowel Type", "Consonant Type",
-           "Number of Repeats", "Rhythm", "Label", "Context"]
+for label in os.listdir(folder):
+    label_path = os.path.join(folder, label)
+    
+    if os.path.isdir(label_path):
+        print(f"Processing Label: {label}...")
+        
+        for file_name in os.listdir(label_path):
+            if file_name.lower().endswith(".wav"):
+                file_path = os.path.join(label_path, file_name)
+                
+                # --- LOAD AUDIO ---
+                y, sr = librosa.load(file_path)
+                snd = parselmouth.Sound(file_path)
+                
+                # --- BASIC ACOUSTIC ---
+                duration = librosa.get_duration(y=y, sr=sr)
+                
+                # --- PITCH & MOVEMENT ---
+                pitch = snd.to_pitch()
+                mean_f0 = parselmouth.praat.call(pitch, "Get mean", 0, 0, "Hertz")
+                std_f0 = parselmouth.praat.call(pitch, "Get standard deviation", 0, 0, "Hertz")
+                min_f0 = parselmouth.praat.call(pitch, "Get minimum", 0, 0, "Hertz", "Parabolic")
+                max_f0 = parselmouth.praat.call(pitch, "Get maximum", 0, 0, "Hertz", "Parabolic")
+                pitch_range = max_f0 - min_f0
+                
+                # Slope Calculation (Rise/Fall)
+                pitch_values = pitch.selected_array['frequency']
+                pitch_values = pitch_values[pitch_values > 0] # Ignore unvoiced
+                slope = np.polyfit(range(len(pitch_values)), pitch_values, 1)[0] if len(pitch_values) > 1 else 0
 
-df = pd.DataFrame(columns=columns)
+                # --- SPECTRAL (Librosa) ---
+                centroid = np.mean(librosa.feature.spectral_centroid(y=y, sr=sr))
+                # Spectral Flux (Onset Strength)
+                flux = np.mean(librosa.onset.onset_strength(y=y, sr=sr))
+                
+                # --- PHONOLOGICAL (Formants) ---
+                formants = snd.to_formant_burg()
+                f1 = parselmouth.praat.call(formants, "Get mean", 1, 0, 0, "Hertz")
+                f2 = parselmouth.praat.call(formants, "Get mean", 2, 0, 0, "Hertz")
 
-# LOOP 
-for file in os.listdir(folder):
-    if file.lower().endswith(".wav"):
-        path = os.path.join(folder, file)
-        sound = parselmouth.Sound(path)
+                all_results.append({
+                    "Label": label,
+                    "Duration": duration,
+                    "Pitch_Mean": mean_f0,
+                    "Pitch_SD": std_f0,
+                    "Pitch_Range": pitch_range,
+                    "Pitch_Slope": slope,
+                    "Spectral_Centroid": centroid,
+                    "Spectral_Flux": flux,
+                    "F1_Vowel_Height": f1,
+                    "F2_Vowel_Backness": f2
+                })
 
-        # Duration
-        duration = sound.get_total_duration()
+# 2. GENERATE MEAN TABLE
+df = pd.DataFrame(all_results)
+mean_table = df.groupby("Label").mean().reset_index()
+mean_table.to_csv(output_csv, index=False)
 
-        # Pitch (mean & SD)
-        pitch = sound.to_pitch(time_step=0.01, pitch_floor=75, pitch_ceiling=300)
-        pitch_values = pitch.selected_array['frequency']
-        pitch_values = pitch_values[pitch_values != 0]  
-        if len(pitch_values) > 0:
-            mean_pitch = np.mean(pitch_values)
-            sd_pitch = np.std(pitch_values)
-        else:
-            mean_pitch = np.nan
-            sd_pitch = np.nan
-
-        # Intensity
-        intensity = sound.to_intensity(time_step=0.01)
-        intensity_values = intensity.values.T.flatten()
-        mean_intensity = np.mean(intensity_values)
-
-        # HNR (cleaned)
-        harmonicity = sound.to_harmonicity_cc(time_step=0.01, minimum_pitch=75)
-        hnr_values = harmonicity.values.T.flatten()
-        # Remove NaNs and non-positive values
-        hnr_values = hnr_values[~np.isnan(hnr_values)]
-        hnr_values = hnr_values[hnr_values > 0]
-        if len(hnr_values) > 0:
-            hnr_mean = np.mean(hnr_values)
-        else:
-            hnr_mean = np.nan  
-
-        # PLACEHOLDERS for manual input
-        vowel_type = ""
-        consonant_type = ""
-        number_of_repeats = ""
-        rhythm = ""
-        label = "Surprise/Shock" #example
-        context = ""
-
-      
-        df = pd.concat([df, pd.DataFrame([[file, duration, mean_pitch, sd_pitch,
-                                           mean_intensity, hnr_mean, vowel_type, consonant_type,
-                                           number_of_repeats, rhythm, label, context]],
-                                         columns=columns)], ignore_index=True)
-
-
-df.to_csv(output_csv, index=False)
-print("CSV saved to:", output_csv)
-
+print(f"\nSuccess! Table created: {output_csv}")
+print(mean_table)
