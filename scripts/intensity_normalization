@@ -1,3 +1,6 @@
+The following was applied to implement arousal-based intensity adjustment. Note that input files had already been peak-normalized to -1 dB in Audacity prior to this stage. 
+
+
 import os
 import soundfile as sf
 
