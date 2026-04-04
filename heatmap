@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InterX-12 Corpus — Acoustic Feature Universality Heatmap</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #1a1a1a; padding: 24px; }
+  h1 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  .subtitle { font-size: 13px; color: #666; margin-bottom: 20px; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab-btn { background: none; border: 1px solid #ccc; border-radius: 8px; padding: 6px 16px; font-size: 13px; color: #555; cursor: pointer; }
+  .tab-btn.active { background: #eee; color: #111; font-weight: 500; border-color: #999; }
+  .card { background: white; border-radius: 12px; border: 1px solid #e0e0e0; padding: 20px; margin-bottom: 20px; }
+  #tooltip { position: fixed; background: white; border: 1px solid #ddd; border-radius: 10px; padding: 10px 14px; font-size: 12px; pointer-events: none; display: none; z-index: 999; max-width: 280px; line-height: 1.7; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  select { font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #ccc; background: white; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px; font-size: 12px; color: #555; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-swatch { width: 14px; height: 14px; border-radius: 3px; }
+  .note { font-size: 12px; color: #888; margin-top: 16px; font-style: italic; }
+  .lang-legend { display: flex; gap: 16px; margin-top: 10px; font-size: 12px; color: #555; }
+  .lang-dot { width: 12px; height: 12px; border-radius: 2px; display: inline-block; margin-right: 4px; }
+</style>
+</head>
+<body>
+
+<h1>InterX-12 Corpus: Acoustic Feature Universality Across Emotions</h1>
+<p class="subtitle">Cross-linguistic comparison of Arabic, English, and Turkish non-lexical emotional interjections. Based on Linear Mixed-Effects Models (LMM) with Estimated Marginal Means (EMM) and Tukey-corrected pairwise comparisons.</p>
+
+<div id="tooltip"></div>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="showTab('heatmap',this)">Universality Heatmap</button>
+  <button class="tab-btn" onclick="showTab('bars',this)">Feature Bar Charts</button>
+</div>
+
+<div id="tab-heatmap" class="card">
+  <p style="font-size:13px;color:#555;margin-bottom:14px">Each cell shows how many language pairs (Arabic, English, Turkish) differ significantly on a given acoustic feature for each emotion. Hover over any cell for details.</p>
+  <div style="overflow-x:auto">
+    <svg id="heatmap-svg" width="100%" viewBox="0 0 720 440"></svg>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:#185FA5"></div>Universal (0 pairs differ)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#63A0D4"></div>1 language pair differs</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#E86B4A"></div>2 language pairs differ</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:#A32D2D"></div>All 3 pairs differ (fully language-specific)</div>
+  </div>
+  <p class="note">Analysis: LMM fitted with language × emotion as fixed effects and speaker ID as random effect. Post-hoc pairwise comparisons based on Estimated Marginal Means (EMMs) with Tukey correction. 78 significant pairs identified.</p>
+</div>
+
+<div id="tab-bars" class="card" style="display:none">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap">
+    <label style="font-size:13px;color:#555">Acoustic Feature:</label>
+    <select id="feat-sel" onchange="drawBars()">
+      <option>Pitch_Mean</option><option>Pitch_SD</option><option>Pitch_Range</option>
+      <option>Pitch_Slope</option><option>Spectral_Centroid</option><option>Spectral_Flux</option>
+      <option>F1_Vowel_Height</option><option>F2_Vowel_Backness</option><option>Duration</option>
+    </select>
+    <span style="font-size:12px;color:#888">— mean value per emotion per language</span>
+  </div>
+  <div style="position:relative;width:100%;height:380px"><canvas id="bar-chart"></canvas></div>
+  <div class="lang-legend" style="margin-top:12px">
+    <span><span class="lang-dot" style="background:#378ADD"></span>Arabic</span>
+    <span><span class="lang-dot" style="background:#1D9E75"></span>English</span>
+    <span><span class="lang-dot" style="background:#BA7517"></span>Turkish</span>
+  </div>
+  <p class="note">Bar charts show raw group means. Statistical significance is shown in the Universality Heatmap tab.</p>
+</div>
+
+<div style="font-size:11px;color:#aaa;margin-top:8px;text-align:center">
+  InterX-12 Corpus — Ghadaq Obeidat, Jordan University of Science and Technology, 2025
+</div>
+
+<script>
+const heatmap={"Affection/ Sympathy":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":2,"Spectral_Flux":2,"F1_Vowel_Height":2,"F2_Vowel_Backness":3,"Duration":1},"Anger/Annoyance":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":1,"Spectral_Flux":1,"F1_Vowel_Height":1,"F2_Vowel_Backness":2,"Duration":2},"Disgust":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":0,"Spectral_Flux":0,"F1_Vowel_Height":1,"F2_Vowel_Backness":1,"Duration":0},"Exhilaration":{"Pitch_Mean":0,"Pitch_SD":2,"Pitch_Range":2,"Pitch_Slope":0,"Spectral_Centroid":0,"Spectral_Flux":2,"F1_Vowel_Height":1,"F2_Vowel_Backness":0,"Duration":2},"Fear":{"Pitch_Mean":2,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":2,"Spectral_Flux":2,"F1_Vowel_Height":0,"F2_Vowel_Backness":3,"Duration":1},"Gustatory Pleasure":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":0,"Spectral_Flux":0,"F1_Vowel_Height":1,"F2_Vowel_Backness":0,"Duration":0},"Indifference / Boredom":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":2,"Spectral_Flux":2,"F1_Vowel_Height":2,"F2_Vowel_Backness":2,"Duration":0},"Neutral":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":1,"Spectral_Flux":2,"F1_Vowel_Height":2,"F2_Vowel_Backness":0,"Duration":1},"Pain":{"Pitch_Mean":2,"Pitch_SD":1,"Pitch_Range":1,"Pitch_Slope":0,"Spectral_Centroid":0,"Spectral_Flux":2,"F1_Vowel_Height":0,"F2_Vowel_Backness":0,"Duration":0},"Relief":{"Pitch_Mean":2,"Pitch_SD":1,"Pitch_Range":1,"Pitch_Slope":2,"Spectral_Centroid":1,"Spectral_Flux":1,"F1_Vowel_Height":0,"F2_Vowel_Backness":0,"Duration":1},"Sadness/disappointment":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":2,"Spectral_Flux":2,"F1_Vowel_Height":0,"F2_Vowel_Backness":2,"Duration":2},"Surprise/Shock":{"Pitch_Mean":0,"Pitch_SD":0,"Pitch_Range":0,"Pitch_Slope":0,"Spectral_Centroid":0,"Spectral_Flux":0,"F1_Vowel_Height":0,"F2_Vowel_Backness":2,"Duration":0}};
+const details={"Affection/ Sympathy":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["Arabic vs Turkish: Arabic is lower (t=5.61, p=0.0)","English vs Turkish: English is lower (t=5.44, p=0.0)"],"Spectral_Flux":["Arabic vs English: Arabic is lower (t=2.74, p=0.017)","Arabic vs Turkish: Arabic is lower (t=3.76, p=0.001)"],"F1_Vowel_Height":["Arabic vs English: Arabic is lower (t=3.41, p=0.002)","Arabic vs Turkish: Arabic is lower (t=4.39, p=0.0)"],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=9.99, p=0.0)","Arabic vs Turkish: Arabic is higher (t=3.69, p=0.001)","English vs Turkish: English is lower (t=6.49, p=0.0)"],"Duration":["Arabic vs Turkish: Arabic is higher (t=2.93, p=0.010)"]},"Anger/Annoyance":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["English vs Turkish: English is lower (t=3.38, p=0.002)"],"Spectral_Flux":["Arabic vs Turkish: Arabic is lower (t=3.44, p=0.002)"],"F1_Vowel_Height":["Arabic vs English: Arabic is lower (t=2.43, p=0.040)"],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=4.7, p=0.0)","Arabic vs Turkish: Arabic is higher (t=2.48, p=0.035)"],"Duration":["Arabic vs English: Arabic is higher (t=3.67, p=0.001)","Arabic vs Turkish: Arabic is higher (t=4.23, p=0.0)"]},"Disgust":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":[],"Spectral_Flux":[],"F1_Vowel_Height":["Arabic vs Turkish: Arabic is higher (t=3.86, p=0.0)"],"F2_Vowel_Backness":["English vs Turkish: English is lower (t=2.37, p=0.047)"],"Duration":[]},"Exhilaration":{"Pitch_Mean":[],"Pitch_SD":["Arabic vs English: Arabic is lower (t=2.43, p=0.041)","English vs Turkish: English is higher (t=3.25, p=0.004)"],"Pitch_Range":["Arabic vs English: Arabic is lower (t=3.03, p=0.007)","English vs Turkish: English is higher (t=3.41, p=0.002)"],"Pitch_Slope":[],"Spectral_Centroid":[],"Spectral_Flux":["Arabic vs English: Arabic is lower (t=4.2, p=0.0)","Arabic vs Turkish: Arabic is lower (t=2.47, p=0.037)"],"F1_Vowel_Height":["English vs Turkish: English is lower (t=2.49, p=0.035)"],"F2_Vowel_Backness":[],"Duration":["Arabic vs English: Arabic is higher (t=3.41, p=0.002)","Arabic vs Turkish: Arabic is higher (t=5.29, p=0.0)"]},"Fear":{"Pitch_Mean":["Arabic vs English: Arabic is higher (t=2.51, p=0.033)","English vs Turkish: English is lower (t=2.35, p=0.050)"],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["Arabic vs English: Arabic is higher (t=4.78, p=0.0)","English vs Turkish: English is lower (t=3.66, p=0.001)"],"Spectral_Flux":["Arabic vs English: Arabic is lower (t=3.32, p=0.003)","Arabic vs Turkish: Arabic is lower (t=2.55, p=0.030)"],"F1_Vowel_Height":[],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=6.23, p=0.0)","Arabic vs Turkish: Arabic is higher (t=2.47, p=0.036)","English vs Turkish: English is lower (t=3.85, p=0.0)"],"Duration":["Arabic vs English: Arabic is higher (t=2.5, p=0.034)"]},"Gustatory Pleasure":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":[],"Spectral_Flux":[],"F1_Vowel_Height":["Arabic vs Turkish: Arabic is lower (t=2.53, p=0.031)"],"F2_Vowel_Backness":[],"Duration":[]},"Indifference / Boredom":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["Arabic vs Turkish: Arabic is lower (t=5.95, p=0.0)","English vs Turkish: English is lower (t=4.94, p=0.0)"],"Spectral_Flux":["Arabic vs English: Arabic is lower (t=3.46, p=0.002)","Arabic vs Turkish: Arabic is lower (t=3.72, p=0.001)"],"F1_Vowel_Height":["Arabic vs Turkish: Arabic is lower (t=4.26, p=0.0)","English vs Turkish: English is lower (t=3.19, p=0.004)"],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=2.4, p=0.044)","English vs Turkish: English is lower (t=2.8, p=0.015)"],"Duration":[]},"Neutral":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["Arabic vs English: Arabic is lower (t=2.43, p=0.041)"],"Spectral_Flux":["Arabic vs Turkish: Arabic is lower (t=4.29, p=0.0)","English vs Turkish: English is lower (t=2.36, p=0.049)"],"F1_Vowel_Height":["Arabic vs English: Arabic is lower (t=2.78, p=0.015)","Arabic vs Turkish: Arabic is lower (t=3.18, p=0.004)"],"F2_Vowel_Backness":[],"Duration":["Arabic vs Turkish: Arabic is higher (t=3.7, p=0.001)"]},"Pain":{"Pitch_Mean":["Arabic vs Turkish: Arabic is lower (t=4.5, p=0.0)","English vs Turkish: English is lower (t=3.63, p=0.001)"],"Pitch_SD":["Arabic vs English: Arabic is lower (t=2.87, p=0.012)"],"Pitch_Range":["Arabic vs English: Arabic is lower (t=3.06, p=0.007)"],"Pitch_Slope":[],"Spectral_Centroid":[],"Spectral_Flux":["Arabic vs English: Arabic is lower (t=3.44, p=0.002)","English vs Turkish: English is higher (t=3.26, p=0.003)"],"F1_Vowel_Height":[],"F2_Vowel_Backness":[],"Duration":[]},"Relief":{"Pitch_Mean":["Arabic vs English: Arabic is lower (t=3.99, p=0.0)","English vs Turkish: English is higher (t=4.48, p=0.0)"],"Pitch_SD":["English vs Turkish: English is higher (t=2.87, p=0.012)"],"Pitch_Range":["English vs Turkish: English is higher (t=2.72, p=0.019)"],"Pitch_Slope":["Arabic vs English: Arabic is higher (t=3.91, p=0.0)","Arabic vs Turkish: Arabic is higher (t=2.62, p=0.025)"],"Spectral_Centroid":["Arabic vs English: Arabic is lower (t=2.93, p=0.010)"],"Spectral_Flux":["Arabic vs Turkish: Arabic is lower (t=4.38, p=0.0)"],"F1_Vowel_Height":[],"F2_Vowel_Backness":[],"Duration":["Arabic vs English: Arabic is higher (t=2.59, p=0.027)"]},"Sadness/disappointment":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":["Arabic vs Turkish: Arabic is lower (t=3.14, p=0.005)","English vs Turkish: English is lower (t=3.89, p=0.0)"],"Spectral_Flux":["Arabic vs Turkish: Arabic is lower (t=3.62, p=0.001)","English vs Turkish: English is lower (t=2.5, p=0.034)"],"F1_Vowel_Height":[],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=4.47, p=0.0)","Arabic vs Turkish: Arabic is higher (t=3.2, p=0.004)"],"Duration":["Arabic vs Turkish: Arabic is higher (t=4.41, p=0.0)","English vs Turkish: English is higher (t=5.17, p=0.0)"]},"Surprise/Shock":{"Pitch_Mean":[],"Pitch_SD":[],"Pitch_Range":[],"Pitch_Slope":[],"Spectral_Centroid":[],"Spectral_Flux":[],"F1_Vowel_Height":[],"F2_Vowel_Backness":["Arabic vs English: Arabic is higher (t=3.22, p=0.004)","Arabic vs Turkish: Arabic is higher (t=3.31, p=0.003)"],"Duration":[]}};
+const means={"Affection/ Sympathy|AR":{"Pitch_Mean":225.797,"Pitch_SD":32.622,"Pitch_Range":113.805,"Pitch_Slope":-0.059,"Spectral_Centroid":1508.214,"Spectral_Flux":1.114,"F1_Vowel_Height":528.253,"F2_Vowel_Backness":2180.119,"Duration":1.447},"Affection/ Sympathy|ENG":{"Pitch_Mean":199.96,"Pitch_SD":44.396,"Pitch_Range":173.111,"Pitch_Slope":-0.197,"Spectral_Centroid":1499.551,"Spectral_Flux":1.55,"F1_Vowel_Height":676.708,"F2_Vowel_Backness":1388.119,"Duration":1.132},"Affection/ Sympathy|TR":{"Pitch_Mean":235.476,"Pitch_SD":33.695,"Pitch_Range":134.356,"Pitch_Slope":-0.04,"Spectral_Centroid":2473.257,"Spectral_Flux":1.556,"F1_Vowel_Height":720.227,"F2_Vowel_Backness":1871.707,"Duration":1.068},"Anger/Annoyance|AR":{"Pitch_Mean":256.059,"Pitch_SD":71.488,"Pitch_Range":209.981,"Pitch_Slope":2.098,"Spectral_Centroid":2052.573,"Spectral_Flux":1.382,"F1_Vowel_Height":664.521,"F2_Vowel_Backness":2016.999,"Duration":1.307},"Anger/Annoyance|ENG":{"Pitch_Mean":207.318,"Pitch_SD":78.929,"Pitch_Range":252.223,"Pitch_Slope":1.968,"Spectral_Centroid":1844.447,"Spectral_Flux":1.664,"F1_Vowel_Height":793.225,"F2_Vowel_Backness":1666.462,"Duration":0.889},"Anger/Annoyance|TR":{"Pitch_Mean":267.234,"Pitch_SD":51.581,"Pitch_Range":170.417,"Pitch_Slope":1.493,"Spectral_Centroid":2539.821,"Spectral_Flux":1.782,"F1_Vowel_Height":789.604,"F2_Vowel_Backness":1832.989,"Duration":0.847},"Disgust|AR":{"Pitch_Mean":231.703,"Pitch_SD":71.303,"Pitch_Range":247.555,"Pitch_Slope":-0.205,"Spectral_Centroid":2141.33,"Spectral_Flux":1.406,"F1_Vowel_Height":836.556,"F2_Vowel_Backness":1818.493,"Duration":1.221},"Disgust|ENG":{"Pitch_Mean":258.781,"Pitch_SD":81.1,"Pitch_Range":258.135,"Pitch_Slope":1.205,"Spectral_Centroid":1976.554,"Spectral_Flux":1.71,"F1_Vowel_Height":731.735,"F2_Vowel_Backness":1649.975,"Duration":0.988},"Disgust|TR":{"Pitch_Mean":250.662,"Pitch_SD":59.563,"Pitch_Range":216.235,"Pitch_Slope":0.168,"Spectral_Centroid":1932.772,"Spectral_Flux":1.51,"F1_Vowel_Height":628.848,"F2_Vowel_Backness":1830.819,"Duration":1.196},"Exhilaration|AR":{"Pitch_Mean":248.216,"Pitch_SD":51.414,"Pitch_Range":179.2,"Pitch_Slope":0.902,"Spectral_Centroid":1657.202,"Spectral_Flux":1.432,"F1_Vowel_Height":671.464,"F2_Vowel_Backness":1542.27,"Duration":1.389},"Exhilaration|ENG":{"Pitch_Mean":304.201,"Pitch_SD":87.855,"Pitch_Range":313.707,"Pitch_Slope":1.116,"Spectral_Centroid":1750.235,"Spectral_Flux":1.896,"F1_Vowel_Height":641.361,"F2_Vowel_Backness":1657.652,"Duration":1.052},"Exhilaration|TR":{"Pitch_Mean":257.86,"Pitch_SD":39.441,"Pitch_Range":161.079,"Pitch_Slope":-0.511,"Spectral_Centroid":1752.979,"Spectral_Flux":1.691,"F1_Vowel_Height":746.084,"F2_Vowel_Backness":1513.772,"Duration":0.875},"Fear|AR":{"Pitch_Mean":333.963,"Pitch_SD":67.459,"Pitch_Range":222.803,"Pitch_Slope":1.413,"Spectral_Centroid":2607.488,"Spectral_Flux":1.404,"F1_Vowel_Height":736.741,"F2_Vowel_Backness":2030.373,"Duration":1.285},"Fear|ENG":{"Pitch_Mean":235.293,"Pitch_SD":54.131,"Pitch_Range":221.255,"Pitch_Slope":-0.215,"Spectral_Centroid":1702.529,"Spectral_Flux":1.773,"F1_Vowel_Height":676.676,"F2_Vowel_Backness":1504.183,"Duration":1.023},"Fear|TR":{"Pitch_Mean":306.891,"Pitch_SD":77.849,"Pitch_Range":263.972,"Pitch_Slope":0.948,"Spectral_Centroid":2355.391,"Spectral_Flux":1.682,"F1_Vowel_Height":761.328,"F2_Vowel_Backness":1807.843,"Duration":1.185},"Gustatory Pleasure|AR":{"Pitch_Mean":249.676,"Pitch_SD":59.563,"Pitch_Range":203.915,"Pitch_Slope":0.249,"Spectral_Centroid":1569.438,"Spectral_Flux":1.325,"F1_Vowel_Height":627.935,"F2_Vowel_Backness":1846.53,"Duration":1.271},"Gustatory Pleasure|ENG":{"Pitch_Mean":213.904,"Pitch_SD":70.705,"Pitch_Range":239.805,"Pitch_Slope":1.534,"Spectral_Centroid":1666.473,"Spectral_Flux":1.535,"F1_Vowel_Height":691.415,"F2_Vowel_Backness":1768.624,"Duration":1.146},"Gustatory Pleasure|TR":{"Pitch_Mean":189.025,"Pitch_SD":52.098,"Pitch_Range":166.807,"Pitch_Slope":-1.026,"Spectral_Centroid":1814.036,"Spectral_Flux":1.47,"F1_Vowel_Height":707.594,"F2_Vowel_Backness":1774.52,"Duration":1.122},"Indifference / Boredom|AR":{"Pitch_Mean":232.346,"Pitch_SD":29.291,"Pitch_Range":116.171,"Pitch_Slope":-0.886,"Spectral_Centroid":1396.489,"Spectral_Flux":1.262,"F1_Vowel_Height":563.07,"F2_Vowel_Backness":1906.687,"Duration":1.089},"Indifference / Boredom|ENG":{"Pitch_Mean":207.797,"Pitch_SD":50.323,"Pitch_Range":185.363,"Pitch_Slope":0.572,"Spectral_Centroid":1641.565,"Spectral_Flux":1.706,"F1_Vowel_Height":622.729,"F2_Vowel_Backness":1736.195,"Duration":0.843},"Indifference / Boredom|TR":{"Pitch_Mean":243.159,"Pitch_SD":47.038,"Pitch_Range":144.931,"Pitch_Slope":-1.54,"Spectral_Centroid":2513.092,"Spectral_Flux":1.708,"F1_Vowel_Height":772.747,"F2_Vowel_Backness":1950.405,"Duration":0.876},"Neutral|AR":{"Pitch_Mean":144.327,"Pitch_SD":54.493,"Pitch_Range":217.347,"Pitch_Slope":-0.37,"Spectral_Centroid":1534.674,"Spectral_Flux":1.389,"F1_Vowel_Height":622.196,"F2_Vowel_Backness":1695.921,"Duration":1.127},"Neutral|ENG":{"Pitch_Mean":129.264,"Pitch_SD":34.675,"Pitch_Range":116.553,"Pitch_Slope":-0.724,"Spectral_Centroid":2011.643,"Spectral_Flux":1.594,"F1_Vowel_Height":764.355,"F2_Vowel_Backness":1760.199,"Duration":1.033},"Neutral|TR":{"Pitch_Mean":178.722,"Pitch_SD":38.859,"Pitch_Range":123.065,"Pitch_Slope":1.215,"Spectral_Centroid":1929.65,"Spectral_Flux":1.748,"F1_Vowel_Height":766.136,"F2_Vowel_Backness":1826.628,"Duration":0.816},"Pain|AR":{"Pitch_Mean":209.307,"Pitch_SD":36.157,"Pitch_Range":134.969,"Pitch_Slope":0.672,"Spectral_Centroid":1761.98,"Spectral_Flux":1.388,"F1_Vowel_Height":772.965,"F2_Vowel_Backness":1785.745,"Duration":1.257},"Pain|ENG":{"Pitch_Mean":245.855,"Pitch_SD":87.409,"Pitch_Range":293.795,"Pitch_Slope":-2.339,"Spectral_Centroid":2136.578,"Spectral_Flux":1.851,"F1_Vowel_Height":864.225,"F2_Vowel_Backness":1704.888,"Duration":1.039},"Pain|TR":{"Pitch_Mean":343.499,"Pitch_SD":73.038,"Pitch_Range":247.994,"Pitch_Slope":-1.394,"Spectral_Centroid":2109.939,"Spectral_Flux":1.54,"F1_Vowel_Height":824.346,"F2_Vowel_Backness":1652.132,"Duration":1.111},"Relief|AR":{"Pitch_Mean":281.621,"Pitch_SD":51.544,"Pitch_Range":160.707,"Pitch_Slope":3.095,"Spectral_Centroid":1900.619,"Spectral_Flux":1.329,"F1_Vowel_Height":820.874,"F2_Vowel_Backness":1636.232,"Duration":1.186},"Relief|ENG":{"Pitch_Mean":369.708,"Pitch_SD":77.549,"Pitch_Range":251.365,"Pitch_Slope":-4.52,"Spectral_Centroid":2441.372,"Spectral_Flux":1.644,"F1_Vowel_Height":906.456,"F2_Vowel_Backness":1736.039,"Duration":0.864},"Relief|TR":{"Pitch_Mean":244.96,"Pitch_SD":39.401,"Pitch_Range":135.434,"Pitch_Slope":-2.01,"Spectral_Centroid":2284.656,"Spectral_Flux":1.855,"F1_Vowel_Height":826.824,"F2_Vowel_Backness":1679.847,"Duration":0.955},"Sadness/disappointment|AR":{"Pitch_Mean":203.446,"Pitch_SD":35.196,"Pitch_Range":134.456,"Pitch_Slope":-0.379,"Spectral_Centroid":1759.216,"Spectral_Flux":1.222,"F1_Vowel_Height":712.541,"F2_Vowel_Backness":1979.836,"Duration":1.403},"Sadness/disappointment|ENG":{"Pitch_Mean":172.864,"Pitch_SD":53.006,"Pitch_Range":198.708,"Pitch_Slope":-0.554,"Spectral_Centroid":1612.935,"Spectral_Flux":1.428,"F1_Vowel_Height":651.556,"F2_Vowel_Backness":1588.932,"Duration":1.427},"Sadness/disappointment|TR":{"Pitch_Mean":238.581,"Pitch_SD":68.9,"Pitch_Range":192.608,"Pitch_Slope":-0.246,"Spectral_Centroid":2363.873,"Spectral_Flux":1.641,"F1_Vowel_Height":759.591,"F2_Vowel_Backness":1692.673,"Duration":0.904},"Surprise/Shock|AR":{"Pitch_Mean":280.519,"Pitch_SD":69.199,"Pitch_Range":237.787,"Pitch_Slope":2.541,"Spectral_Centroid":2035.885,"Spectral_Flux":1.497,"F1_Vowel_Height":660.757,"F2_Vowel_Backness":1814.996,"Duration":1.128},"Surprise/Shock|ENG":{"Pitch_Mean":262.202,"Pitch_SD":80.635,"Pitch_Range":266.662,"Pitch_Slope":0.761,"Spectral_Centroid":1860.721,"Spectral_Flux":1.571,"F1_Vowel_Height":747.108,"F2_Vowel_Backness":1584.657,"Duration":1.196},"Surprise/Shock|TR":{"Pitch_Mean":228.859,"Pitch_SD":60.626,"Pitch_Range":207.317,"Pitch_Slope":-0.663,"Spectral_Centroid":1740.424,"Spectral_Flux":1.696,"F1_Vowel_Height":694.516,"F2_Vowel_Backness":1569.611,"Duration":1.016}};
+const emotions=["Affection/ Sympathy","Anger/Annoyance","Disgust","Exhilaration","Fear","Gustatory Pleasure","Indifference / Boredom","Neutral","Pain","Relief","Sadness/disappointment","Surprise/Shock"];
+const features=["Pitch_Mean","Pitch_SD","Pitch_Range","Pitch_Slope","Spectral_Centroid","Spectral_Flux","F1_Vowel_Height","F2_Vowel_Backness","Duration"];
+const shortFeat=["PitchMn","PitchSD","PitchRng","PitchSlp","SpeCent","SpeFlux","F1","F2","Dur"];
+const shortEmo=["Affection","Anger","Disgust","Exhilar.","Fear","Gust.P.","Indiffer.","Neutral","Pain","Relief","Sadness","Surprise"];
+const colors={0:'#185FA5',1:'#63A0D4',2:'#E86B4A',3:'#A32D2D'};
+
+function drawHeatmap(){
+  const svg=document.getElementById('heatmap-svg');
+  const W=720,padL=90,padT=72,cellW=(W-padL-20)/features.length,cellH=26;
+  const H=padT+emotions.length*cellH+50;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  let html='';
+  features.forEach((f,fi)=>{
+    const x=padL+fi*cellW+cellW/2;
+    html+=`<text x="${x}" y="${padT-10}" text-anchor="middle" font-size="10" fill="#555" font-family="sans-serif" transform="rotate(-35,${x},${padT-10})">${shortFeat[fi]}</text>`;
+  });
+  emotions.forEach((e,ei)=>{
+    const y=padT+ei*cellH;
+    html+=`<text x="${padL-8}" y="${y+cellH/2+4}" text-anchor="end" font-size="10" fill="#444" font-family="sans-serif">${shortEmo[ei]}</text>`;
+    features.forEach((f,fi)=>{
+      const v=heatmap[e][f],x=padL+fi*cellW;
+      html+=`<rect x="${x+1}" y="${y+1}" width="${cellW-2}" height="${cellH-2}" rx="4" fill="${colors[v]}" opacity="0.85" style="cursor:pointer" onmouseenter="showTip(event,'${e.replace(/'/g,"\\'")}','${f}',${v})" onmouseleave="hideTip()"/>`;
+      if(v>0)html+=`<text x="${x+cellW/2}" y="${y+cellH/2+4}" text-anchor="middle" font-size="10" fill="white" font-family="sans-serif" font-weight="600" style="pointer-events:none">${v}</text>`;
+    });
+  });
+  svg.innerHTML=html;
+}
+
+function showTip(e,emotion,feature,v){
+  const t=document.getElementById('tooltip');
+  const pairs=details[emotion]?.[feature]??[];
+  let body=`<b style="font-size:13px">${emotion}</b><br><span style="font-size:11px;color:#888">${feature}</span><br>`;
+  if(v===0){body+=`<span style="color:#185FA5;font-weight:500">✓ Universal — no significant language differences</span>`;}
+  else{body+=`<span style="color:${colors[v]};font-weight:500">Significant pairs (Tukey corrected):</span><br>`;pairs.forEach(p=>{body+=`<span style="color:#555">• ${p}</span><br>`;});}
+  t.innerHTML=body;t.style.display='block';
+  t.style.left=(e.clientX+16)+'px';t.style.top=(e.clientY+16)+'px';
+}
+function hideTip(){document.getElementById('tooltip').style.display='none';}
+
+let barChart=null;
+function drawBars(){
+  const feat=document.getElementById('feat-sel').value;
+  const labs=emotions.map(e=>e.length>12?e.slice(0,11)+'…':e);
+  const arData=emotions.map(e=>+((means[`${e}|AR`]?.[feat])??0).toFixed(2));
+  const enData=emotions.map(e=>+((means[`${e}|ENG`]?.[feat])??0).toFixed(2));
+  const trData=emotions.map(e=>+((means[`${e}|TR`]?.[feat])??0).toFixed(2));
+  if(barChart)barChart.destroy();
+  barChart=new Chart(document.getElementById('bar-chart'),{
+    type:'bar',
+    data:{labels:labs,datasets:[
+      {label:'Arabic',data:arData,backgroundColor:'#378ADD',borderRadius:4},
+      {label:'English',data:enData,backgroundColor:'#1D9E75',borderRadius:4},
+      {label:'Turkish',data:trData,backgroundColor:'#BA7517',borderRadius:4}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+      scales:{x:{ticks:{font:{size:10},maxRotation:38,autoSkip:false},grid:{display:false}},
+              y:{ticks:{font:{size:11}},grid:{color:'rgba(0,0,0,0.06)'}}}}
+  });
+}
+
+function showTab(name,btn){
+  document.getElementById('tab-heatmap').style.display=name==='heatmap'?'':'none';
+  document.getElementById('tab-bars').style.display=name==='bars'?'':'none';
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(name==='bars')drawBars();
+}
+drawHeatmap();
+</script>
+</body>
+</html>
