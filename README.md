@@ -1,7 +1,7 @@
 # interjection-emotion-dataset: InterX-12 
 
 This repository contains resources from an ongoing research project on 
-emotion detection in non-lexical interjections across three languages: 
+emotion detection in interjections across three languages: 
 **Arabic, English, and Turkish**.  
 
 ## Dataset Overview
