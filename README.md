@@ -6,7 +6,7 @@ emotion detection in non-lexical interjections across three languages:
 
 ## Dataset Overview
 
-- The dataset consists of **non-lexical interjections** (e.g., "Ah!", "Ugh!", "Wow!") collected from publicly available YouTube videos.  
+- The dataset consists of **interjections** (e.g., "Ah!", "Ugh!", "Wow!") collected from publicly available YouTube videos.  
 - **Languages:** Arabic, English, Turkish  
 - **Emotion Labels (12 total):**  
   1. Neutral  
