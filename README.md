@@ -22,11 +22,11 @@ emotion detection in interjections across three languages:
   11. Sadness / Disappointment  
   12. Affection / Sympathy  
 
-- **Dataset Size:** Each label has **50 clips per language**, for a total of 1,800 annotated clips.  
+- **Dataset Size:** Each label has **20 clips per language**, for a total of 720 annotated clips.  
 
 ## Contents
 - `annotations.csv` – emotion labels
-- `INTERX-12_FULL.cvs - the metadata for each clip  
+- `INTERX-12_FULL.cvs` - the metadata for each clip  
 - `scripts/` – analysis and feature extraction scripts  
 - `README.md` – dataset documentation  
 
