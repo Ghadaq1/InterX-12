@@ -26,7 +26,7 @@ emotion detection in interjections across three languages:
 
 ## Contents
 - `annotations.csv` – emotion labels
-- INTERX-12_FULL.cvs - the metadata for each clip  
+- `INTERX-12_FULL.cvs - the metadata for each clip  
 - `scripts/` – analysis and feature extraction scripts  
 - `README.md` – dataset documentation  
 
