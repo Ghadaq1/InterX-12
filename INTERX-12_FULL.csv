@@ -1,0 +1,721 @@
+﻿file_name,label,speaker_ID,speaker_gender,source,source_type,language
+EN001AA.wav,Anger/Annoyance,E01,F,N/A ,ACT,ENG
+EN002AA.wav,Anger/Annoyance,E01,F,N/A ,ACT,ENG
+EN003AA.wav,Anger/Annoyance,E02,M,N/A ,NAT,ENG
+EN004AA.wav,Anger/Annoyance,E02,M,N/A ,NAT,ENG
+EN005AA.wav,Anger/Annoyance,E03,F,N/A ,NAT,ENG
+EN006AA.wav,Anger/Annoyance,E04,F,N/A ,ACT,ENG
+EN007AA.wav,Anger/Annoyance,E05,M,https://youtu.be/BD3my03ioio?t=2302,NAT,ENG
+EN008AA.wav,Anger/Annoyance,E06,M,https://youtu.be/zhL5DCizj5c?t=541,NAT,ENG
+EN009AA.wav,Anger/Annoyance,E07,M,https://youtu.be/RthJg85O8vw?t=1039,ACT,ENG
+EN010AA.wav,Anger/Annoyance,E08,M,https://youtu.be/NLYV3sPf5J8?t=582,NAT,ENG
+EN011AA.wav,Anger/Annoyance,E09,F,https://youtu.be/y84YqNg1p0U?t=3002,NAT,ENG
+EN012AA.wav,Anger/Annoyance,E10,M,https://youtu.be/I2ubdS4oBKY?t=826,ACT,ENG
+EN013AA.wav,Anger/Annoyance,E11,F,https://youtu.be/Z2KWRq76NNI?t=363,ACT,ENG
+EN014AA.wav,Anger/Annoyance,E12,M,https://youtu.be/iJOb9xHggS4?t=375,NAT,ENG
+EN015AA.wav,Anger/Annoyance,E13,F,https://youtu.be/c_9bCYJSUUo?t=114,ACT,ENG
+EN016AA.wav,Anger/Annoyance,E14,M,https://youtu.be/7n9IOH0NvyY?t=774,NAT,ENG
+EN017AA.wav,Anger/Annoyance,E15,F,https://youtu.be/q2qAWTMJEnQ?t=44,NAT,ENG
+EN018AA.wav,Anger/Annoyance,E16,M,https://youtu.be/PHBMFuqJSYw?t=360,NAT,ENG
+EN019AA.wav,Anger/Annoyance,E17,M,https://youtu.be/v3oOF6LxDcg?t=2304,NAT,ENG
+EN020AA.wav,Anger/Annoyance,E18,M,https://youtu.be/S4nCY0H4598?t=149,NAT,ENG
+EN001AS.wav,Affection/ Sympathy ,E02,M,https://youtu.be/th5FKd9cvLI?t=474,NAT,ENG
+EN002AS.wav,Affection/ Sympathy ,E19,M,https://youtu.be/th5FKd9cvLI?t=484,NAT,ENG
+EN003AS.wav,Affection/ Sympathy ,E02,M,https://youtu.be/th5FKd9cvLI?t=989,NAT,ENG
+EN004AS.wav,Affection/ Sympathy ,E02,M,https://youtu.be/th5FKd9cvLI?t=1042,NAT,ENG
+EN005AS.wav,Affection/ Sympathy ,E02,M,https://youtu.be/th5FKd9cvLI?t=1300,NAT,ENG
+EN006AS.wav,Affection/ Sympathy ,E20,F,https://youtu.be/7A6JQTlX-9k?t=33,NAT,ENG
+EN007AS.wav,Affection/ Sympathy ,E01,F,unavaliable ,NAT,ENG
+EN008AS.wav,Affection/ Sympathy ,E01,F,unavaliable ,NAT,ENG
+EN009AS.wav,Affection/ Sympathy ,E21,F,unavaliable ,NAT,ENG
+EN010AS.wav,Affection/ Sympathy ,E02,M,unavaliable ,NAT,ENG
+EN011AS.wav,Affection/ Sympathy ,E22,F,unavaliable ,NAT,ENG
+EN012AS.wav,Affection/ Sympathy ,E23,F,unavaliable ,ACT,ENG
+EN013AS.wav,Affection/ Sympathy ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=52,NAT,ENG
+EN014AS.wav,Affection/ Sympathy ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=194,NAT,ENG
+EN015AS.wav,Affection/ Sympathy ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=942,NAT,ENG
+EN016AS.wav,Affection/ Sympathy ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=954,NAT,ENG
+EN017AS.wav,Affection/ Sympathy ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=2009,NAT,ENG
+EN018AS.wav,Affection/ Sympathy ,E25,M,https://youtu.be/qljF3WE7rGE?t=698,NAT,ENG
+EN019AS.wav,Affection/ Sympathy ,E26,M,https://youtu.be/FHtYX3FXRIE?t=2279,NAT,ENG
+EN020AS.wav,Affection/ Sympathy ,E26,M,https://youtu.be/FHtYX3FXRIE?t=2705,NAT,ENG
+EN001D.wav,Disgust,E27,F,https://youtu.be/Uw2VnUSoWR4?t=1686,NAT,ENG
+EN002D.wav,Disgust,E04,F,N/A,ACT,ENG
+EN003D.wav,Disgust,E28,F,N/A,NAT,ENG
+EN004D.wav,Disgust,E29,M,N/A,NAT,ENG
+EN005D.wav,Disgust,E24,F,https://youtu.be/tyAGSm8Pl4g?t=325,NAT,ENG
+EN006D.wav,Disgust,E30,M,https://youtu.be/T-a73jUwzcY?t=459,NAT,ENG
+EN007D.wav,Disgust,E31,M,https://youtu.be/zBOGKvKuC_g?t=82,NAT,ENG
+EN008D.wav,Disgust,E32,M,https://youtu.be/bDrNolNVMPg?t=1458,NAT,ENG
+EN009D.wav,Disgust,E32,M,https://youtu.be/bDrNolNVMPg?t=2928,NAT,ENG
+EN010D.wav,Disgust,E33,M,https://youtu.be/miwyIhpR9Kk?t=2670,ACT,ENG
+EN011D.wav,Disgust,E34,F,https://youtu.be/5QMSEoVte-o?t=725,NAT,ENG
+EN012D.wav,Disgust,E35,F,https://youtu.be/57EW8AElyVU?t=1767,ACT,ENG
+EN013D.wav,Disgust,E36,F,https://youtu.be/BysY4qb6es8?t=1712,ACT,ENG
+EN014D.wav,Disgust,E37,F,https://youtu.be/SnDuIbYDW64?t=291,ACT,ENG
+EN015D.wav,Disgust,E38,F,https://youtu.be/QloRndWD0rk?t=465,ACT,ENG
+EN016D.wav,Disgust,E39,F,https://youtu.be/fO76jgepo74?t=152,ACT,ENG
+EN017D.wav,Disgust,E40,F,https://youtu.be/JyYlXJ9LYLI?t=219,NAT,ENG
+EN018D.wav,Disgust,E41,M,https://youtu.be/PuHy2Eiiexs?t=134,ACT,ENG
+EN019D.wav,Disgust,E42,M,https://youtu.be/ipezAHkTOuU?t=2856,ACT,ENG
+EN020D.wav,Disgust,E43,M,https://youtu.be/MVxWVQfbjxk?t=100,ACT,ENG
+EN001E.wav,Exhilaration,E02,M,https://youtu.be/th5FKd9cvLI?t=1188,NAT,ENG
+EN002E.wav,Exhilaration,E01,F,N/A,ACT,ENG
+EN003E.wav,Exhilaration,E44,M,N/A,NAT,ENG
+EN004E.wav,Exhilaration,E45,F,N/A,NAT,ENG
+EN005E.wav,Exhilaration,E46,F,N/A,NAT,ENG
+EN006E.wav,Exhilaration,E04,F,N/A,ACT,ENG
+EN007E.wav,Exhilaration,E24,F,https://youtu.be/tyAGSm8Pl4g?t=132,NAT,ENG
+EN008E.wav,Exhilaration,E24,F,https://youtu.be/tyAGSm8Pl4g?t=1009,NAT,ENG
+EN009E.wav,Exhilaration,E47,M,https://youtu.be/z8OIbfsXxOM?t=2315,NAT,ENG
+EN010E.wav,Exhilaration,E48,F,https://youtu.be/qJuhi6zn1ZY?t=85,ACT,ENG
+EN011E.wav,Exhilaration,E49,F,https://youtu.be/qaSUQ2ANg-E?t=1461,ACT,ENG
+EN012E.wav,Exhilaration,E50,M,https://youtu.be/vxJOjvsj3j0,NAT,ENG
+EN013E.wav,Exhilaration,E51,M,https://youtu.be/vxJOjvsj3j0?t=3,ACT,ENG
+EN014E.wav,Exhilaration,E52,F,https://youtu.be/FbV4ndCyRsQ?t=413,ACT,ENG
+EN015E.wav,Exhilaration,E53,F,https://youtu.be/Mjl1i13JKNM?t=672,ACT,ENG
+EN016E.wav,Exhilaration,E54,F,https://youtu.be/Nx6N1Nwvcgs?t=2976,ACT,ENG
+EN017E.wav,Exhilaration,E55,F,https://youtu.be/FBUd2e7LsJs?t=309,ACT,ENG
+EN018E.wav,Exhilaration,E56,M,https://youtu.be/a7KUQ0OckgQ?t=333,ACT,ENG
+EN019E.wav,Exhilaration,E57,M,https://youtu.be/eNGgfPs0Xp8?t=318,ACT,ENG
+EN020E.wav,Exhilaration,E58,M,https://youtu.be/XMasl8ceaYQ?t=247,NAT,ENG
+EN001F.wav,Fear,E59,F,https://youtu.be/Uw2VnUSoWR4?t=119,NAT,ENG
+EN002F.wav,Fear,E59,F,https://youtu.be/Uw2VnUSoWR4?t=137,NAT,ENG
+EN003F.wav,Fear,E59,F,https://youtu.be/Uw2VnUSoWR4?t=1628,NAT,ENG
+EN004F.wav,Fear,E27,F,https://youtu.be/Uw2VnUSoWR4?t=1934,NAT,ENG
+EN005F.wav,Fear,E59,F,https://youtu.be/Uw2VnUSoWR4?t=2010,NAT,ENG
+EN006F.wav,Fear,E60,F,N/A,NAT,ENG
+EN007F.wav,Fear,E02,M,N/A,NAT,ENG
+EN008F.wav,Fear,E61,M,N/A,NAT,ENG
+EN009F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=116,NAT,ENG
+EN010F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=510,NAT,ENG
+EN011F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=619,NAT,ENG
+EN012F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=633,NAT,ENG
+EN013F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=1037,NAT,ENG
+EN014F.wav,Fear,E62,M,https://youtu.be/0atNSjd0Yxg?t=2109,NAT,ENG
+EN015F.wav,Fear,E63,M,https://youtu.be/tlNjl8m-7Io?t=1498,NAT,ENG
+EN016F.wav,Fear,E64,M,https://youtu.be/DPq_9lFI4bY?t=87,NAT,ENG
+EN017F.wav,Fear,E24,F,https://youtu.be/tyAGSm8Pl4g?t=619,NAT,ENG
+EN018F.wav,Fear,E25,M,https://youtu.be/qljF3WE7rGE?t=1139,NAT,ENG
+EN019F.wav,Fear,E25,M,https://youtu.be/qljF3WE7rGE?t=1141,NAT,ENG
+EN020F.wav,Fear,E65,F,https://youtu.be/qljF3WE7rGE?t=1148,NAT,ENG
+EN001G.wav,Gustatory Pleasure,E66,M,https://youtu.be/5SynFhIfvL8?t=166,NAT,ENG
+EN002G.wav,Gustatory Pleasure,E67,M,https://youtu.be/5SynFhIfvL8?t=228,NAT,ENG
+EN003G.wav,Gustatory Pleasure,E66,M,https://youtu.be/5SynFhIfvL8?t=337,NAT,ENG
+EN004G.wav,Gustatory Pleasure,E67,M,https://youtu.be/zBOGKvKuC_g?t=83,NAT,ENG
+EN005G.wav,Gustatory Pleasure,E68,M,https://youtu.be/zBOGKvKuC_g?t=84,NAT,ENG
+EN006G.wav,Gustatory Pleasure,E69,M,https://youtu.be/amLHT-kaOPg?t=110,NAT,ENG
+EN007G.wav,Gustatory Pleasure,E70,F,https://youtu.be/Gft1FSH3TfA?t=64,ACT,ENG
+EN008G.wav,Gustatory Pleasure,E71,M,https://youtu.be/t9GNMVfEiG4?t=156,ACT,ENG
+EN009G.wav,Gustatory Pleasure,E72,F,https://youtu.be/F6PQ1W6Gn1U?t=834,NAT,ENG
+EN010G.wav,Gustatory Pleasure,E73,F,https://youtu.be/CKaRP3F-cg8?t=1963,ACT,ENG
+EN011G.wav,Gustatory Pleasure,E74,M,https://youtu.be/QDjgZlpXfNk?t=269,ACT,ENG
+EN012G.wav,Gustatory Pleasure,E75,F,https://youtu.be/N0mu30SynVM?t=290,NAT,ENG
+EN013G.wav,Gustatory Pleasure,E75,F,https://youtu.be/N0mu30SynVM?t=290,NAT,ENG
+EN014G.wav,Gustatory Pleasure,E76,F,https://youtu.be/yp1zih3IAuQ?t=135,NAT,ENG
+EN015G.wav,Gustatory Pleasure,E77,F,https://youtu.be/d0tQCStEW6k?t=298,NAT,ENG
+EN016G.wav,Gustatory Pleasure,E77,F,https://youtu.be/d0tQCStEW6k?t=720,NAT,ENG
+EN017G.wav,Gustatory Pleasure,E75,F,https://youtu.be/heeuPIg41dM?t=296,NAT,ENG
+EN018G.wav,Gustatory Pleasure,E78,M,https://youtu.be/DHpZS-wPcXI?t=109,NAT,ENG
+EN019G.wav,Gustatory Pleasure,E79,M,https://youtu.be/DHpZS-wPcXI?t=168,NAT,ENG
+EN020G.wav,Gustatory Pleasure,E78,M,https://youtu.be/DHpZS-wPcXI?t=169,NAT,ENG
+EN001IB.wav,Indifference / Boredom,E80,M,https://youtu.be/CKuPYArH0Gs?t=1557,ACT,ENG
+EN002IB.wav,Indifference / Boredom,E81,M,https://youtu.be/kErHiET5YPw?t=2232,ACT,ENG
+EN003IB.wav,Indifference / Boredom,E82,F,https://youtu.be/NEO7p_Sy_v8?t=238,ACT,ENG
+EN004IB.wav,Indifference / Boredom,E82,F,https://youtu.be/NEO7p_Sy_v8?t=243,ACT,ENG
+EN005IB.wav,Indifference / Boredom,E83,F,https://youtu.be/VxQkIJFDEDo?t=153,ACT,ENG
+EN006IB.wav,Indifference / Boredom,E84,F,https://youtu.be/0MtsXbTJdt8?t=303,ACT,ENG
+EN007IB.wav,Indifference / Boredom,E85,M,https://youtu.be/RcSeODrhWts?t=221,ACT,ENG
+EN008IB.wav,Indifference / Boredom,E86,M,https://youtu.be/miwyIhpR9Kk?t=3270,NAT,ENG
+EN009IB.wav,Indifference / Boredom,E87,M,https://youtu.be/OxRMe1LUxb8?t=1034,NAT,ENG
+EN010IB.wav,Indifference / Boredom,E88,F,https://youtu.be/GWGG9YJXsy8?t=1276,NAT,ENG
+EN011IB.wav,Indifference / Boredom,E89,F,https://youtu.be/MIYKeaVqqMQ?t=783,NAT,ENG
+EN012IB.wav,Indifference / Boredom,E90,M,https://youtu.be/SU8JYKGekXo?t=111,NAT,ENG
+EN013IB.wav,Indifference / Boredom,E91,M,https://youtu.be/d3L8QxyVyyU?t=663,NAT,ENG
+EN014IB.wav,Indifference / Boredom,E92,F,https://youtu.be/vvaOQAQLXok?t=123,NAT,ENG
+EN015IB.wav,Indifference / Boredom,E92,F,https://youtu.be/vvaOQAQLXok?t=124,NAT,ENG
+EN016IB.wav,Indifference / Boredom,E93,F,https://youtu.be/rWMLdFqmgkE?t=487,NAT,ENG
+EN017IB.wav,Indifference / Boredom,E94,F,https://youtu.be/gNksX8ngnKc?t=276,NAT,ENG
+EN018IB.wav,Indifference / Boredom,E95,M,https://youtu.be/vaENmWvIwPU?t=123,ACT,ENG
+EN019IB.wav,Indifference / Boredom,E96,F,https://youtu.be/JCV56y9xAQQ?t=102,ACT,ENG
+EN020IB.wav,Indifference / Boredom,E97,M,https://youtu.be/Xe8fIjxicoo?t=2908,ACT,ENG
+EN001N.wav,Neutral,E19,M,https://youtu.be/th5FKd9cvLI?t=146,NAT,ENG
+EN002N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=223,NAT,ENG
+EN003N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=230,NAT,ENG
+EN004N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=494,NAT,ENG
+EN005N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=613,NAT,ENG
+EN006N.wav,Neutral,E19,M,https://youtu.be/th5FKd9cvLI?t=683,NAT,ENG
+EN007N.wav,Neutral,E19,M,https://youtu.be/th5FKd9cvLI?t=752,NAT,ENG
+EN008N.wav,Neutral,E19,M,https://youtu.be/th5FKd9cvLI?t=1035,NAT,ENG
+EN009N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=1067,NAT,ENG
+EN010N.wav,Neutral,E02,M,https://youtu.be/th5FKd9cvLI?t=1075,NAT,ENG
+EN011N.wav,Neutral,E19,M,https://youtu.be/th5FKd9cvLI?t=1119,NAT,ENG
+EN012N.wav,Neutral,E98,M,https://youtu.be/7A6JQTlX-9k?t=116,NAT,ENG
+EN013N.wav,Neutral,E98,M,https://youtu.be/7A6JQTlX-9k?t=348,NAT,ENG
+EN014N.wav,Neutral,E99,M,https://youtu.be/Uw2VnUSoWR4?t=441,NAT,ENG
+EN015N.wav,Neutral,E01,F,N/A,NAT,ENG
+EN016N.wav,Neutral,E01,F,N/A,NAT,ENG
+EN017N.wav,Neutral,E100,M,N/A,NAT,ENG
+EN018N.wav,Neutral,E101,M,N/A,NAT,ENG
+EN019N.wav,Neutral,E102,M,N/A,NAT,ENG
+EN020N.wav,Neutral,E01,F,N/A,NAT,ENG
+EN001P.wav,Pain,E103,M,N/A,NAT,ENG
+EN002P.wav,Pain,E104,M,N/A,NAT,ENG
+EN003P.wav,Pain,E32,M,N/A,NAT,ENG
+EN004P.wav,Pain,E32,M,https://youtu.be/bDrNolNVMPg?t=1538,NAT,ENG
+EN005P.wav,Pain,E104,M,https://youtu.be/lAH-SmHfSPw?t=3401,NAT,ENG
+EN006P.wav,Pain,E105,M,https://youtu.be/i4TIesBARoA?t=1176,NAT,ENG
+EN007P.wav,Pain,E106,M,https://youtu.be/q_6r6qnUVfk?t=429,NAT,ENG
+EN008P.wav,Pain,E107,M,https://youtu.be/NpRvfxCSm4A?t=115,ACT,ENG
+EN009P.wav,Pain,E108,F,https://youtu.be/IvtZBUSplr4?t=803,NAT,ENG
+EN010P.wav,Pain,E109,F,https://youtu.be/7ZrdzhYLmgo?t=946,ACT,ENG
+EN011P.wav,Pain,E110,M,https://youtu.be/kSgAd8LLuRc?t=552,NAT,ENG
+EN012P.wav,Pain,E111,F,https://youtu.be/kSgAd8LLuRc?t=634,NAT,ENG
+EN013P.wav,Pain,E112,M,https://youtu.be/CeVtPDjJBPU?t=43,NAT,ENG
+EN014P.wav,Pain,E113,M,https://youtu.be/mfqM7AVCIsE?t=217,NAT,ENG
+EN015P.wav,Pain,E114,M,https://youtu.be/c-EaqjtTBeo?t=895,NAT,ENG
+EN016P.wav,Pain,E115,M,https://youtu.be/O5qUp5AYSRg?t=1475,NAT,ENG
+EN017P.wav,Pain,E116,M,https://youtu.be/s9cr8-LyNuE?t=264,NAT,ENG
+EN018P.wav,Pain,E117,M,https://youtu.be/noxclfeoxtM?t=97,NAT,ENG
+EN019P.wav,Pain,E118,M,https://youtu.be/osvgc4-4CHQ?t=304,NAT,ENG
+EN020P.wav,Pain,E118,M,https://youtu.be/osvgc4-4CHQ?t=319,NAT,ENG
+EN001R.wav,Relief,E27,F,https://youtu.be/Uw2VnUSoWR4?t=245,NAT,ENG
+EN002R.wav,Relief,E119,M,N/A,NAT,ENG
+EN003R.wav,Relief,E120,M,https://youtu.be/lFG-5qR4zEE?t=38,NAT,ENG
+EN004R.wav,Relief,E121,F,https://youtu.be/c_9bCYJSUUo?t=74,ACT,ENG
+EN005R.wav,Relief,E122,M,https://youtu.be/MMR6VYe6sfY?t=1240,NAT,ENG
+EN006R.wav,Relief,E123,F,https://youtu.be/da1vvigy5tQ?t=147,ACT,ENG
+EN007R.wav,Relief,E24,F,https://youtu.be/tyAGSm8Pl4g?t=229,ACT,ENG
+EN008R.wav,Relief,E125,M,https://youtu.be/1cQbMP3I5Sk?t=674,NAT,ENG
+EN009R.wav,Relief,E126,F,https://youtu.be/FBUd2e7LsJs?t=502,NAT,ENG
+EN010R.wav,Relief,E127,M,https://youtu.be/AtJXOwudokU?t=62,ACT,ENG
+EN011R.wav,Relief,E128,M,https://youtu.be/I7Foam6oKPI?t=1807,ACT,ENG
+EN012R.wav,Relief,E24,F,https://youtu.be/tyAGSm8Pl4g?t=932,NAT,ENG
+EN013R.wav,Relief,E129,F,https://youtu.be/PENkzh0tWJs?t=598,NAT,ENG
+EN014R.wav,Relief,E130,F,https://youtu.be/eCBW1wlHt2k?t=10,NAT,ENG
+EN015R.wav,Relief,E131,F,https://youtu.be/8byQeRSsca4?t=84,ACT,ENG
+EN016R.wav,Relief,E132,F,https://youtu.be/1jDoMFD3oGs?t=949,NAT,ENG
+EN017R.wav,Relief,E133,F,https://youtu.be/X8CD2QEYo6Q?t=1043,ACT,ENG
+EN018R.wav,Relief,E134,M,https://youtu.be/I7Foam6oKPI?t=1809,NAT,ENG
+EN019R.wav,Relief,E135,M,https://youtu.be/R6YtqE1v7uA?t=177,ACT,ENG
+EN020R.wav,Relief,E136,F,https://youtu.be/I8uUjtiaXqE?t=292,ACT,ENG
+EN001SD.wav,Sadness/disappointment ,E02,M,https://youtu.be/th5FKd9cvLI?t=409,NAT,ENG
+EN002SD.wav,Sadness/disappointment ,E02,M,https://youtu.be/th5FKd9cvLI?t=567,NAT,ENG
+EN003SD.wav,Sadness/disappointment ,E20,F,https://youtu.be/7A6JQTlX-9k?t=1505,NAT,ENG
+EN004SD.wav,Sadness/disappointment ,E02,M,https://youtu.be/th5FKd9cvLI?t=3399,NAT,ENG
+EN005SD.wav,Sadness/disappointment ,E59,F,https://youtu.be/Uw2VnUSoWR4?t=268,NAT,ENG
+EN006SD.wav,Sadness/disappointment ,E59,F,https://youtu.be/Uw2VnUSoWR4?t=450,NAT,ENG
+EN007SD.wav,Sadness/disappointment ,E137,F,N/A,NAT,ENG
+EN008SD.wav,Sadness/disappointment ,E138,M,N/A,NAT,ENG
+EN009SD.wav,Sadness/disappointment ,E32,M,N/A,NAT,ENG
+EN010SD.wav,Sadness/disappointment ,E139,M,N/A,ACT,ENG
+EN011SD.wav,Sadness/disappointment ,E140,M,N/A,NAT,ENG
+EN012SD.wav,Sadness/disappointment ,E141,M,N/A,NAT,ENG
+EN013SD.wav,Sadness/disappointment ,E141,M,N/A,NAT,ENG
+EN014SD.wav,Sadness/disappointment ,E142,M,N/A,NAT,ENG
+EN015SD.wav,Sadness/disappointment ,E142,M,N/A,NAT,ENG
+EN016SD.wav,Sadness/disappointment ,E138,M,N/A,ACT,ENG
+EN017SD.wav,Sadness/disappointment ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=229,NAT,ENG
+EN018SD.wav,Sadness/disappointment ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=255,NAT,ENG
+EN019SD.wav,Sadness/disappointment ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=360,NAT,ENG
+EN020SD.wav,Sadness/disappointment ,E24,F,https://youtu.be/tyAGSm8Pl4g?t=932,NAT,ENG
+EN001SS.wav,Surprise/Shock,E02,M,https://youtu.be/th5FKd9cvLI?t=197,NAT,ENG
+EN002SS.wav,Surprise/Shock,E02,M,https://youtu.be/th5FKd9cvLI?t=215,NAT,ENG
+EN003SS.wav,Surprise/Shock,E143,F,N/A,NAT,ENG
+EN004SS.wav,Surprise/Shock,E144,F,https://youtu.be/th5FKd9cvLI?t=604,NAT,ENG
+EN005SS.wav,Surprise/Shock,E02,M,https://youtu.be/th5FKd9cvLI?t=674,NAT,ENG
+EN006SS.wav,Surprise/Shock,E19,M,https://youtu.be/th5FKd9cvLI?t=683,NAT,ENG
+EN007SS.wav,Surprise/Shock,AR01,F,ELICTED,ACT,ENG
+EN008SS.wav,Surprise/Shock,E19,M,https://youtu.be/th5FKd9cvLI?t=1200,NAT,ENG
+EN009SS.wav,Surprise/Shock,E98,M,https://youtu.be/7A6JQTlX-9k?t=28,NAT,ENG
+EN010SS.wav,Surprise/Shock,E20,F,https://youtu.be/7A6JQTlX-9k?t=735,NAT,ENG
+EN011SS.wav,Surprise/Shock,E20,F,https://youtu.be/7A6JQTlX-9k?t=963,NAT,ENG
+EN012SS.wav,Surprise/Shock,E145,F,N/A,ACT,ENG
+EN013SS.wav,Surprise/Shock,E20,F,https://youtu.be/7A6JQTlX-9k?t=1992,NAT,ENG
+EN014SS.wav,Surprise/Shock,E27,F,https://youtu.be/Uw2VnUSoWR4?t=341,NAT,ENG
+EN015SS.wav,Surprise/Shock,E59,F,https://youtu.be/Uw2VnUSoWR4?t=364,NAT,ENG
+EN016SS.wav,Surprise/Shock,E27,F,https://youtu.be/Uw2VnUSoWR4?t=467,NAT,ENG
+EN017SS.wav,Surprise/Shock,E124,F,N/A,ACT,ENG
+EN018SS.wav,Surprise/Shock,E04,F,N/A,ACT,ENG
+EN019SS.wav,Surprise/Shock,E141,M,N/A,ACT,ENG
+EN020SS.wav,Surprise/Shock,E101,M,N/A,ACT,ENG
+TR001AA.wav,Anger/Annoyance,TR01,F,N/A,ACT,TR
+TR002AA.wav,Anger/Annoyance,TR02,F,N/A,ACT,TR
+TR003AA.wav,Anger/Annoyance,TR03,F,N/A,ACT,TR
+TR004AA.wav,Anger/Annoyance,TR04,F,N/A,ACT,TR
+TR005AA.wav,Anger/Annoyance,TR02,F,N/A,ACT,TR
+TR006AA.wav,Anger/Annoyance,TR05,M,https://youtu.be/52zR_iX7K5g?t=63,NAT,TR
+TR007AA.wav,Anger/Annoyance,TR02,F,N/A,ACT,TR
+TR008AA.wav,Anger/Annoyance,TR03,F,N/A,ACT,TR
+TR009AA.wav,Anger/Annoyance,TR02,F,N/A,ACT,TR
+TR010AA.wav,Anger/Annoyance,TR02,F,N/A,ACT,TR
+TR011AA.wav,Anger/Annoyance,TR06,M,N/A,ACT,TR
+TR012AA.wav,Anger/Annoyance,TR07,M,N/A,NAT,TR
+TR013AA.wav,Anger/Annoyance,TR07,M,N/A,NAT,TR
+TR014AA.wav,Anger/Annoyance,TR08,F,N/A,ACT,TR
+TR015AA.wav,Anger/Annoyance,TR09,M,N/A,ACT,TR
+TR016AA.wav,Anger/Annoyance,TR10,F,https://youtu.be/D6qVruLNcTc?t=6997,ACT,TR
+TR017AA.wav,Anger/Annoyance,TR11,F,https://youtu.be/D6qVruLNcTc?t=7051,ACT,TR
+TR018AA.wav,Anger/Annoyance,TR12,F,https://youtu.be/OetPDQjkISU?t=1026,ACT,TR
+TR019AA.wav,Anger/Annoyance,TR13,M,https://youtu.be/PiFzx25eU1k?t=4661,ACT,TR
+TR020AA.wav,Anger/Annoyance,TR14,F,https://youtu.be/qveaFhrFtHw?t=277,ACT,TR
+TR001AS.wav,Affection/ Sympathy ,TR02,F,N/A,ACT,TR
+TR002AS.wav,Affection/ Sympathy ,TR15,M,https://youtu.be/Ulzkx4Zqums?t=138,ACT,TR
+TR003AS.wav,Affection/ Sympathy ,TR16,F,N/A,ACT,TR
+TR004AS.wav,Affection/ Sympathy ,TR17,F,N/A,NAT,TR
+TR005AS.wav,Affection/ Sympathy ,TR18,F,https://youtu.be/Js8Sp4Jye10?t=1142,ACT,TR
+TR006AS.wav,Affection/ Sympathy ,TR18,F,https://youtu.be/ji20AN8EaWo?t=430,NAT,TR
+TR007AS.wav,Affection/ Sympathy ,AR01,F,ELICTED,NAT,TR
+TR008AS.wav,Affection/ Sympathy ,TR12,F,https://youtu.be/MUGFThIN9l4?t=4313,ACT,TR
+TR009AS.wav,Affection/ Sympathy ,TR19,F,https://youtu.be/OetPDQjkISU?t=5009,ACT,TR
+TR010AS.wav,Affection/ Sympathy ,TR20,F,https://youtu.be/7Fo9EbKG7Kk?t=1808,ACT,TR
+TR011AS.wav,Affection/ Sympathy ,TR19,F,https://youtu.be/7Fo9EbKG7Kk?t=3006,ACT,TR
+TR012AS.wav,Affection/ Sympathy ,TR21,M,https://youtu.be/mlqYDTW0Z5k?t=6688,NAT,TR
+TR013AS.wav,Affection/ Sympathy ,TR22,F,https://youtu.be/nSMQslRAdq8?t=472,ACT,TR
+TR014AS.wav,Affection/ Sympathy ,TR23,F,https://youtu.be/EGuiK2eX_ro?t=275,ACT,TR
+TR015AS.wav,Affection/ Sympathy ,TR24,F,https://youtu.be/X75GCTj0Epc?t=3112,NAT,TR
+TR016AS.wav,Affection/ Sympathy ,TR21,M,https://youtu.be/M5ImXuJExrk?t=2195,NAT,TR
+TR017AS.wav,Affection/ Sympathy ,TR25,F,https://youtu.be/-MEuRUOTLFs?t=1585,ACT,TR
+TR018AS.wav,Affection/ Sympathy ,TR26,F,https://youtu.be/USZma0SpQWU?t=621,ACT,TR
+TR019AS.wav,Affection/ Sympathy ,TR27,F,https://youtu.be/z3VQOCiaGs8?t=752,ACT,TR
+TR020AS.wav,Affection/ Sympathy ,TR28,F,https://youtu.be/5f4HfrmWxfg?t=1692,ACT,TR
+TR001D.wav,Disgust,TR29,F,https://youtu.be/u49jOANwpaM?t=296,NAT,TR
+TR002D.wav,Disgust,TR30,F,https://youtu.be/AXatSyborAM?t=346,NAT,TR
+TR003D.wav,Disgust,TR31,M,https://youtu.be/296jPy_lJ8o?t=603,NAT,TR
+TR004D.wav,Disgust,TR32,M,https://youtu.be/jTjBFdaTYCA?t=960,NAT,TR
+TR005D.wav,Disgust,TR33,F,https://youtu.be/z1RENq0owtU?t=1012,NAT,TR
+TR006D.wav,Disgust,TR34,M,https://youtu.be/qNiuQoIKl_M?t=1131,NAT,TR
+TR007D.wav,Disgust,TR35,M,https://youtu.be/Q2Q5L6j3los?t=119,NAT,TR
+TR008D.wav,Disgust,TR36,F,https://youtu.be/Q2Q5L6j3los?t=582,NAT,TR
+TR009D.wav,Disgust,TR36,F,https://youtu.be/Q2Q5L6j3los?t=634,NAT,TR
+TR010D.wav,Disgust,TR35,M,https://youtu.be/Q2Q5L6j3los?t=654,NAT,TR
+TR011D.wav,Disgust,TR37,M,https://youtu.be/Q2Q5L6j3los?t=658,NAT,TR
+TR012D.wav,Disgust,TR35,M,https://youtu.be/Q2Q5L6j3los?t=752,NAT,TR
+TR013D.wav,Disgust,TR38,F,https://youtu.be/UkA5tTr8JFQ?t=186,NAT,TR
+TR014D.wav,Disgust,TR38,F,https://youtu.be/UkA5tTr8JFQ?t=188,NAT,TR
+TR015D.wav,Disgust,TR39,M,https://youtu.be/qs3MrXwd2Bs?t=5847,ACT,TR
+TR016D.wav,Disgust,TR40,M,https://youtu.be/u2ROfDrYof0?t=6476,ACT,TR
+TR017D.wav,Disgust,TR41,M,https://youtu.be/XI0IGAFBU4o?t=64,NAT,TR
+TR018D.wav,Disgust,TR42,F,https://youtu.be/zI2VldmdTM4?t=280,NAT,TR
+TR019D.wav,Disgust,TR43,M,https://youtu.be/4uiOll_1u-0?t=234,NAT,TR
+TR020D.wav,Disgust,TR44,F,https://youtu.be/_A3adOe3zrQ?t=1094,ACT,TR
+TR001E.wav,Exhilaration,TR04,F,N/A,ACT,TR
+TR002E.wav,Exhilaration,TR133,F,N/A,ACT,TR
+TR003E.wav,Exhilaration,TR31,M,https://youtu.be/Js8Sp4Jye10?t=14,NAT,TR
+TR004E.wav,Exhilaration,TR37,M,https://youtu.be/Js8Sp4Jye10?t=29,NAT,TR
+TR005E.wav,Exhilaration,TR45,M,https://youtu.be/Js8Sp4Jye10?t=445,NAT,TR
+TR006E.wav,Exhilaration,TR46,F,https://youtu.be/Js8Sp4Jye10?t=454,NAT,TR
+TR007E.wav,Exhilaration,TR18,F,https://youtu.be/Js8Sp4Jye10?t=596,NAT,TR
+TR008E.wav,Exhilaration,TR46,F,N/A,NAT,TR
+TR009E.wav,Exhilaration,TR18,F,N/A,NAT,TR
+TR010E.wav,Exhilaration,TR47,F,N/A,NAT,TR
+TR011E.wav,Exhilaration,TR18,F,https://youtu.be/Js8Sp4Jye10?t=1082,NAT,TR
+TR012E.wav,Exhilaration,TR34,M,https://youtu.be/u49jOANwpaM?t=399,NAT,TR
+TR013E.wav,Exhilaration,TR35,M,https://youtu.be/ji20AN8EaWo?t=5,NAT,TR
+TR014E.wav,Exhilaration,TR46,F,https://youtu.be/ji20AN8EaWo?t=86,NAT,TR
+TR015E.wav,Exhilaration,TR31,M,https://youtu.be/ji20AN8EaWo?t=422,NAT,TR
+TR016E.wav,Exhilaration,TR37,M,https://youtu.be/7iFp9OPxyyA?t=240,NAT,TR
+TR017E.wav,Exhilaration,TR12,F,https://youtu.be/7Fo9EbKG7Kk?t=1721,ACT,TR
+TR018E.wav,Exhilaration,TR46,F,https://youtu.be/nUKJHdoKoFw?t=476,NAT,TR
+TR019E.wav,Exhilaration,TR48,M,https://youtu.be/nSMQslRAdq8?t=348,NAT,TR
+TR020E.wav,Exhilaration,TR49,M,https://youtu.be/-eWzRzcHxNw?t=549,NAT,TR
+TR001F.wav,Fear,TR02,F,N/A,ACT,TR
+TR002F.wav,Fear,TR50,F,https://youtu.be/MUFFThIN9l4?t=5698,NAT,TR
+TR003F.wav,Fear,TR02,F,N/A,ACT,TR
+TR004F.wav,Fear,TR51,F,https://youtu.be/wjN0exOE2Vw?t=2118,ACT,TR
+TR005F.wav,Fear,TR52,F,https://youtu.be/GJTCCyVgbjo?t=224,NAT,TR
+TR006F.wav,Fear,TR53,M,https://youtu.be/ISKnAHzf6-0?t=5693,ACT,TR
+TR007F.wav,Fear,TR54,M,https://youtu.be/hibuKqp6xsw?t=1648,ACT,TR
+TR008F.wav,Fear,TR55,F,https://youtu.be/UkA5tTr8JFQ?t=167,ACT,TR
+TR009F.wav,Fear,TR46,F,https://youtu.be/DtP7l2KU5Pw?t=169,NAT,TR
+TR010F.wav,Fear,TR56,F,https://youtu.be/yV2IX70iOJw?t=555,NAT,TR
+TR011F.wav,Fear,TR57,F,https://youtu.be/lkkPhoCgutA?t=559,ACT,TR
+TR012F.wav,Fear,TR58,M,https://youtu.be/5bGwqwjLVw4?t=1751,ACT,TR
+TR013F.wav,Fear,TR59,M,https://youtu.be/NPN4pkw1sG8?t=1302,ACT,TR
+TR014F.wav,Fear,TR60,M,https://youtu.be/-Wzp0fQhJrc?t=869,ACT,TR
+TR015F.wav,Fear,TR60,M,https://youtu.be/KYGdyOPltx4?t=4157,ACT,TR
+TR016F.wav,Fear,TR61,M,https://youtu.be/B4P0zgkAki0?t=665,NAT,TR
+TR017F.wav,Fear,TR62,M,https://youtu.be/HQWxbPjHtMc?t=3181,ACT,TR
+TR018F.wav,Fear,TR63,F,https://youtu.be/jN0HiB_e3kI?t=6088,ACT,TR
+TR019F.wav,Fear,TR64,F,https://youtu.be/Jfm2ncI7xrc?t=1698,ACT,TR
+TR020F.wav,Fear,TR65,M,https://youtu.be/UtiI1MEU7h8?t=344,ACT,TR
+TR001G.wav,Gustatory Pleasure,TR31,M,https://youtu.be/ji20AN8EaWo?t=218,NAT,TR
+TR002G.wav,Gustatory Pleasure,TR66,M,https://youtu.be/ji20AN8EaWo?t=234,NAT,TR
+TR003G.wav,Gustatory Pleasure,TR31,M,https://youtu.be/ji20AN8EaWo?t=246,NAT,TR
+TR004G.wav,Gustatory Pleasure,TR67,F,https://youtu.be/ji20AN8EaWo?t=419,NAT,TR
+TR005G.wav,Gustatory Pleasure,TR31,M,https://youtu.be/ji20AN8EaWo?t=1238,NAT,TR
+TR006G.wav,Gustatory Pleasure,TR67,F,https://youtu.be/7iFp9OPxyyA?t=303,NAT,TR
+TR007G.wav,Gustatory Pleasure,TR66,M,https://youtu.be/7iFp9OPxyyA?t=441,NAT,TR
+TR008G.wav,Gustatory Pleasure,TR31,M,https://youtu.be/qNiuQoIKl_M?t=412,NAT,TR
+TR009G.wav,Gustatory Pleasure,TR12,F,https://youtu.be/uEUDklw-R2o?t=6306,ACT,TR
+TR010G.wav,Gustatory Pleasure,TR13,M,https://youtu.be/ISKnAHzf6-0?t=5556,ACT,TR
+TR011G.wav,Gustatory Pleasure,TR68,F,https://youtu.be/zSLNUwcbqqo?t=2865,ACT,TR
+TR012G.wav,Gustatory Pleasure,TR69,F,https://youtu.be/s0zbkx_9T0M?t=7951,ACT,TR
+TR013G.wav,Gustatory Pleasure,TR70,M,https://youtu.be/K17QKIn2tvg?t=515,NAT,TR
+TR014G.wav,Gustatory Pleasure,TR71,F,https://youtu.be/OeHxe75lMNE?t=10281,ACT,TR
+TR015G.wav,Gustatory Pleasure,TR72,M,https://youtu.be/jN0HiB_e3kI?t=3350,ACT,TR
+TR016G.wav,Gustatory Pleasure,TR73,F,https://youtu.be/2kX-Gce9mCU?t=390,NAT,TR
+TR017G.wav,Gustatory Pleasure,TR73,F,https://youtu.be/2kX-Gce9mCU?t=449,NAT,TR
+TR018G.wav,Gustatory Pleasure,TR74,M,https://youtu.be/Up0EyZaHDJI?t=67,ACT,TR
+TR019G.wav,Gustatory Pleasure,TR70,M,https://youtu.be/dID6A6z9q7c?t=262,NAT,TR
+TR020G.wav,Gustatory Pleasure,TR75,F,https://youtu.be/UvF7rFqqfmc?t=5451,ACT,TR
+TR001IB.wav,Indifference / Boredom,TR134,F,N/A,ACT,TR
+TR002IB.wav,Indifference / Boredom,TR02,F,N/A,ACT,TR
+TR003IB.wav,Indifference / Boredom,TR76,M,https://youtu.be/Js8Sp4Jye10?t=1230,NAT,TR
+TR004IB.wav,Indifference / Boredom,TR34,M,https://youtu.be/u49jOANwpaM?t=1300,NAT,TR
+TR005IB.wav,Indifference / Boredom,TR11,F,https://youtu.be/D6qVruLNcTc?t=6484,ACT,TR
+TR006IB.wav,Indifference / Boredom,TR77,M,https://youtu.be/uEUDklw-R2o?t=5015,ACT,TR
+TR007IB.wav,Indifference / Boredom,TR78,M,https://youtu.be/C-Wgb5ErsZQ?t=29,ACT,TR
+TR008IB.wav,Indifference / Boredom,TR53,M,https://youtu.be/PiFzx25eU1k?t=7614,ACT,TR
+TR009IB.wav,Indifference / Boredom,TR77,M,https://youtu.be/M5ImXuJExrk?t=6532,ACT,TR
+TR010IB.wav,Indifference / Boredom,TR12,F,https://youtu.be/M5ImXuJExrk?t=7933,ACT,TR
+TR011IB.wav,Indifference / Boredom,TR79,M,https://youtu.be/OyAn7L-g_eI?t=4788,ACT,TR
+TR012IB.wav,Indifference / Boredom,TR80,M,https://youtu.be/5uIl38UFVh0?t=49,NAT,TR
+TR013IB.wav,Indifference / Boredom,TR81,F,https://youtu.be/shTQcd9baj4?t=104,NAT,TR
+TR014IB.wav,Indifference / Boredom,TR82,M,https://youtu.be/9bc8ntvBMwE?t=1248,ACT,TR
+TR015IB.wav,Indifference / Boredom,TR83,M,https://youtu.be/5QChc8d-FTY?t=3438,ACT,TR
+TR016IB.wav,Indifference / Boredom,TR84,F,https://youtu.be/8Yu_uR8rZrA?t=4145,ACT,TR
+TR017IB.wav,Indifference / Boredom,TR85,M,https://youtu.be/a_SoPbglmYg?t=686,ACT,TR
+TR018IB.wav,Indifference / Boredom,TR86,M,https://youtu.be/6-4u97AOlek?t=102,NAT,TR
+TR019IB.wav,Indifference / Boredom,TR87,M,https://youtu.be/2xbRWMEs6Fg?t=828,NAT,TR
+TR020IB.wav,Indifference / Boredom,TR88,M,https://youtu.be/3f6q85q3xgA?t=244,NAT,TR
+TR001N.wav,Neutral,TR89,M,https://youtu.be/PsZchgH4Hgs?t=15,NAT,TR
+TR002N.wav,Neutral,TR90,F,N/A,ACT,TR
+TR003N.wav,Neutral,TR132,F,N/A,ACT,TR
+TR004N.wav,Neutral,TR91,F,N/A,ACT,TR
+TR005N.wav,Neutral,TR92,M,N/A,NAT,TR
+TR006N.wav,Neutral,TR07,M,N/A,NAT,TR
+TR007N.wav,Neutral,TR47,F,N/A,NAT,TR
+TR008N.wav,Neutral,TR08,F,N/A,ACT,TR
+TR009N.wav,Neutral,TR35,M,https://youtu.be/PsZchgH4Hgs?t=617,NAT,TR
+TR010N.wav,Neutral,TR35,M,https://youtu.be/PsZchgH4Hgs?t=902,NAT,TR
+TR011N.wav,Neutral,TR12,F,https://youtu.be/0cAeq2OXfj8?t=710,ACT,TR
+TR012N.wav,Neutral,TR93,M,https://youtu.be/0cAeq2OXfj8?t=3497,ACT,TR
+TR013N.wav,Neutral,TR95,M,https://youtu.be/gGBSrgWpJiU?t=49,ACT,TR
+TR014N.wav,Neutral,TR94,M,https://youtu.be/0cAeq2OXfj8?t=3819,ACT,TR
+TR015N.wav,Neutral,TR51,F,https://youtu.be/0cAeq2OXfj8?t=5165,ACT,TR
+TR016N.wav,Neutral,TR77,M,https://youtu.be/0cAeq2OXfj8?t=5875,ACT,TR
+TR017N.wav,Neutral,TR51,F,https://youtu.be/0cAeq2OXfj8?t=7532,ACT,TR
+TR018N.wav,Neutral,TR53,M,https://youtu.be/CCYbu_iM8HI?t=1205,ACT,TR
+TR019N.wav,Neutral,TR93,M,https://youtu.be/CCYbu_iM8HI?t=1498,ACT,TR
+TR020N.wav,Neutral,TR95,M,https://youtu.be/gGBSrgWpJiU?t=49,ACT,TR
+TR001P.wav,Pain,TR03,F,N/A,ACT,TR
+TR002P.wav,Pain,TR04,F,N/A,ACT,TR
+TR003P.wav,Pain,TR19,F,https://youtu.be/8P6F15Eut2w?t=39,ACT,TR
+TR004P.wav,Pain,TR09,M,https://youtu.be/8P6F15Eut2w?t=313,ACT,TR
+TR005P.wav,Pain,TR09,M,https://youtu.be/7Fo9EbKF7Kk?t=3584,ACT,TR
+TR006P.wav,Pain,TR94,M,https://youtu.be/0cAeq2OXfj8?t=1585,ACT,TR
+TR007P.wav,Pain,TR67,F,https://youtu.be/t0WwAA6sc4A?t=365,NAT,TR
+TR008P.wav,Pain,TR67,F,https://youtu.be/t0WwAA6sc4A?t=1406,NAT,TR
+TR009P.wav,Pain,TR96,M,https://youtu.be/FS4_UrP4zYo?t=440,ACT,TR
+TR010P.wav,Pain,TR97,F,https://youtu.be/ISKnAHzf6-0?t=4662,ACT,TR
+TR011P.wav,Pain,TR98,F,https://youtu.be/UJcU_KoH1M4?t=7031,ACT,TR
+TR012P.wav,Pain,TR12,F,https://youtu.be/uEUDklw-R2o?t=8159,ACT,TR
+TR013P.wav,Pain,TR99,M,https://youtu.be/Q2Q5L6j3los?t=11,NAT,TR
+TR014P.wav,Pain,TR100,M,https://youtu.be/riCGuvcH-FY?t=4237,NAT,TR
+TR015P.wav,Pain,TR101,M,https://youtu.be/NLhbpPuOmKM?t=5657,ACT,TR
+TR016P.wav,Pain,TR102,M,https://youtu.be/PmX9-QJt5Cs?t=331,NAT,TR
+TR017P.wav,Pain,TR102,M,https://youtu.be/PmX9-QJt5Cs?t=334,NAT,TR
+TR018P.wav,Pain,TR103,M,https://youtu.be/PmX9-QJt5Cs?t=363,NAT,TR
+TR019P.wav,Pain,TR104,M,https://youtu.be/djzbU--wEfg?t=1255,ACT,TR
+TR020P.wav,Pain,TR105,F,https://youtu.be/MWwFZcZLYWs?t=99,NAT,TR
+TR001R.wav,Relief,TR106,M,https://youtu.be/Js8Sp4Jye10?t=18,NAT,TR
+TR002R.wav,Relief,TR107,F,N/A,ACT,TR
+TR003R.wav,Relief,TR09,M,https://youtu.be/2kfb-sinfBk?t=347,ACT,TR
+TR004R.wav,Relief,TR108,F,https://youtu.be/D6qVruLNcTc?t=4980,ACT,TR
+TR005R.wav,Relief,TR109,M,https://youtu.be/EPWo2C6SbBg?t=410,ACT,TR
+TR006R.wav,Relief,TR110,F,https://youtu.be/ud6wNNxyEks?t=147,ACT,TR
+TR007R.wav,Relief,TR66,M,https://youtu.be/qNiuQoIKl_M?t=807,NAT,TR
+TR008R.wav,Relief,TR11,F,https://youtu.be/X75GCTj0Epc?t=3868,ACT,TR
+TR009R.wav,Relief,TR94,M,https://youtu.be/uEUDklw-R2o?t=8188,ACT,TR
+TR010R.wav,Relief,TR111,F,https://youtu.be/fKXuUv7QVbE?t=716,NAT,TR
+TR011R.wav,Relief,TR80,M,https://youtu.be/-4Vufms0r3U?t=896,NAT,TR
+TR012R.wav,Relief,TR112,M,https://youtu.be/pP4eIJeUjXU?t=3401,ACT,TR
+TR013R.wav,Relief,TR113,M,https://youtu.be/Fvo45X1JYBU?t=114,NAT,TR
+TR014R.wav,Relief,TR114,M,https://youtu.be/beMznjf4zg4?t=256,NAT,TR
+TR015R.wav,Relief,TR115,F,https://youtu.be/dgOCV8a-lHw?t=542,NAT,TR
+TR016R.wav,Relief,TR116,F,https://youtu.be/7ua_GDncZxs?t=1354,NAT,TR
+TR017R.wav,Relief,TR117,M,https://youtu.be/10Rx4hQy5PI?t=66,ACT,TR
+TR018R.wav,Relief,TR09,M,https://youtu.be/2kfb-sinfBk?t=347,ACT,TR
+TR019R.wav,Relief,TR118,F,N/A,NAT,TR
+TR020R.wav,Relief,TR119,F,https://youtu.be/jhmfLDWagSk?t=3,NAT,TR
+TR001SD.wav,Sadness/disappointment ,TR120,F,N/A,NAT,TR
+TR002SD.wav,Sadness/disappointment ,TR121,M,N/A,NAT,TR
+TR003SD.wav,Sadness/disappointment ,TR66,M,https://youtu.be/ji20AN8EaWo?t=305,NAT,TR
+TR004SD.wav,Sadness/disappointment ,TR12,F,https://youtu.be/9p3y8Zlfmec?t=3369,ACT,TR
+TR005SD.wav,Sadness/disappointment ,TR14,F,https://youtu.be/7grADCsAjao?t=214,ACT,TR
+TR006SD.wav,Sadness/disappointment ,TR107,F,https://youtu.be/ud6wNNxyEks?t=423,ACT,TR
+TR007SD.wav,Sadness/disappointment ,TR122,F,https://youtu.be/0cAeq2OXfj8?t=670,ACT,TR
+TR008SD.wav,Sadness/disappointment ,TR94,M,https://youtu.be/0cAeq2OXfj8?t=1575,ACT,TR
+TR009SD.wav,Sadness/disappointment ,TR123,M,https://youtu.be/0cAeq2OXfj8?t=6257,ACT,TR
+TR010SD.wav,Sadness/disappointment ,TR124,M,https://youtu.be/nZTd7TQkv38?t=89,ACT,TR
+TR011SD.wav,Sadness/disappointment ,TR125,F,https://youtu.be/CCYbu_iM8HI?t=6274,ACT,TR
+TR012SD.wav,Sadness/disappointment ,TR19,F,https://youtu.be/wjN0exOE2Vw?t=7055,ACT,TR
+TR013SD.wav,Sadness/disappointment ,TR123,M,https://youtu.be/PiFzx25eU1k?t=1273,ACT,TR
+TR014SD.wav,Sadness/disappointment ,TR135,M,https://youtu.be/PiFzx25eU1k?t=2062,ACT,TR
+TR015SD.wav,Sadness/disappointment ,TR123,M,https://youtu.be/PiFzx25eU1k?t=2148,ACT,TR
+TR016SD.wav,Sadness/disappointment ,TR97,F,https://youtu.be/PiFzx25eU1k?t=5383,ACT,TR
+TR017SD.wav,Sadness/disappointment ,TR107,F,https://youtu.be/ud6wNNxyEks?t=423,ACT,TR
+TR018SD.wav,Sadness/disappointment ,TR123,M,https://youtu.be/uEUDklw-R2o?t=4442,ACT,TR
+TR019SD.wav,Sadness/disappointment ,TR126,F,https://youtu.be/OetPDQjkISU?t=5823,ACT,TR
+TR020SD.wav,Sadness/disappointment ,TR03,F,N/A,ACT,TR
+TR001SS.wav,Surprise/Shock,TR127,M,https://youtu.be/9bc8ntvBMwE?t=2217,ACT,TR
+TR002SS.wav,Surprise/Shock,TR02,F,N/A,ACT,TR
+TR003SS.wav,Surprise/Shock,TR90,F,N/A,ACT,TR
+TR004SS.wav,Surprise/Shock,TR03,F,N/A,ACT,TR
+TR005SS.wav,Surprise/Shock,TR04,F,N/A,ACT,TR
+TR006SS.wav,Surprise/Shock,TR106,M,https://youtu.be/Js8Sp4Jye10?t=284,NAT,TR
+TR007SS.wav,Surprise/Shock,TR67,F,N/A,NAT,TR
+TR008SS.wav,Surprise/Shock,TR16,F,N/A,NAT,TR
+TR009SS.wav,Surprise/Shock,TR128,M,N/A,NAT,TR
+TR010SS.wav,Surprise/Shock,TR16,F,N/A,NAT,TR
+TR011SS.wav,Surprise/Shock,TR129,F,N/A,ACT,TR
+TR012SS.wav,Surprise/Shock,TR07,M,N/A,NAT,TR
+TR013SS.wav,Surprise/Shock,TR16,F,N/A,NAT,TR
+TR014SS.wav,Surprise/Shock,TR16,F,N/A,NAT,TR
+TR015SS.wav,Surprise/Shock,TR07,M,N/A,NAT,TR
+TR016SS.wav,Surprise/Shock,TR130,M,N/A,ACT,TR
+TR017SS.wav,Surprise/Shock,TR09,M,https://youtu.be/4wbW_oHdDs0?t=1074,ACT,TR
+TR018SS.wav,Surprise/Shock,TR131,M,https://youtu.be/Js8Sp4Jye10?t=1065,NAT,TR
+TR019SS.wav,Surprise/Shock,TR66,M,https://youtu.be/u49jOANwpaM?t=161,NAT,TR
+TR020SS.wav,Surprise/Shock,TR99,M,https://youtu.be/u49jOANwpaM?t=230,NAT,TR
+AR001AA.wav,Anger/Annoyance,AR01,F,N/A,ACT,AR
+AR002AA.wav,Anger/Annoyance,AR01,F,N/A,ACT,AR
+AR003AA.wav,Anger/Annoyance,AR01,F,N/A,ACT,AR
+AR004AA.wav,Anger/Annoyance,AR02,M,N/A,ACT,AR
+AR005AA.wav,Anger/Annoyance,AR02,M,N/A,ACT,AR
+AR006AA.wav,Anger/Annoyance,AR03,F,N/A,ACT,AR
+AR007AA.wav,Anger/Annoyance,AR03,F,N/A,ACT,AR
+AR008AA.wav,Anger/Annoyance,AR04,M,N/A,NAT,AR
+AR009AA.wav,Anger/Annoyance,AR05,M,N/A,ACT,AR
+AR010AA.wav,Anger/Annoyance,AR02,M,N/A,ACT,AR
+AR011AA.wav,Anger/Annoyance,AR06,M,https://youtu.be/nbVbPA3tsIM?t=916,NAT,AR
+AR012AA.wav,Anger/Annoyance,AR06,M,https://youtu.be/nbVbPA3tsIM?t=2193,NAT,AR
+AR013AA.wav,Anger/Annoyance,AR06,M,https://youtu.be/nbVbPA3tsIM?t=2547,NAT,AR
+AR014AA.wav,Anger/Annoyance,AR06,M,https://youtu.be/nbVbPA3tsIM?t=2711,NAT,AR
+AR015AA.wav,Anger/Annoyance,AR03,F,N/A,ACT,AR
+AR016AA.wav,Anger/Annoyance,AR04,M,N/A,NAT,AR
+AR017AA.wav,Anger/Annoyance,AR03,F,N/A,ACT,AR
+AR018AA.wav,Anger/Annoyance,AR07,F,N/A,ACT,AR
+AR019AA.wav,Anger/Annoyance,AR08,M,N/A,ACT,AR
+AR020AA.wav,Anger/Annoyance,AR08,M,N/A,ACT,AR
+AR001AS.wav,Affection/ Sympathy ,AR09,F,https://youtu.be/GQh_Mlq6f6I?t=337,ACT,AR
+AR002AS.wav,Affection/ Sympathy ,AR02,M,N/A,ACT,AR
+AR003AS.wav,Affection/ Sympathy ,AR03,F,N/A,ACT,AR
+AR004AS.wav,Affection/ Sympathy ,AR10,F,N/A,ACT,AR
+AR005AS.wav,Affection/ Sympathy ,AR07,F,N/A,ACT,AR
+AR006AS.wav,Affection/ Sympathy ,AR11,M,N/A,ACT,AR
+AR007AS.wav,Affection/ Sympathy ,AR01,F,N/A,ACT,AR
+AR008AS.wav,Affection/ Sympathy ,AR01,F,N/A,ACT,AR
+AR009AS.wav,Affection/ Sympathy ,AR01,F,N/A,ACT,AR
+AR010AS.wav,Affection/ Sympathy ,AR01,F,N/A,ACT,AR
+AR011AS.wav,Affection/ Sympathy ,AR01,F,N/A,ACT,AR
+AR012AS.wav,Affection/ Sympathy ,AR12,M,N/A,ACT,AR
+AR013AS.wav,Affection/ Sympathy ,AR12,M,N/A,ACT,AR
+AR014AS.wav,Affection/ Sympathy ,AR13,F,N/A,ACT,AR
+AR015AS.wav,Affection/ Sympathy ,AR13,F,N/A,ACT,AR
+AR016AS.wav,Affection/ Sympathy ,AR13,F,N/A,ACT,AR
+AR017AS.wav,Affection/ Sympathy ,AR10,F,N/A,ACT,AR
+AR018AS.wav,Affection/ Sympathy ,AR10,F,N/A,ACT,AR
+AR019AS.wav,Affection/ Sympathy ,AR02,M,N/A,ACT,AR
+AR020AS.wav,Affection/ Sympathy ,AR02,M,N/A,ACT,AR
+AR001D.wav,Disgust,AR01,F,N/A,ACT,AR
+AR002D.wav,Disgust,AR01,F,N/A,ACT,AR
+AR003D.wav,Disgust,AR03,F,N/A,ACT,AR
+AR004D.wav,Disgust,AR03,F,N/A,ACT,AR
+AR005D.wav,Disgust,AR10,F,N/A,ACT,AR
+AR006D.wav,Disgust,AR10,F,N/A,ACT,AR
+AR007D.wav,Disgust,AR10,F,N/A,ACT,AR
+AR008D.wav,Disgust,AR07,F,N/A,ACT,AR
+AR009D.wav,Disgust,AR22,F,https://youtu.be/Gx2FS1hsBFA?t=313,NAT,AR
+AR010D.wav,Disgust,AR22,F,https://youtu.be/Gx2FS1hsBFA?t=366,NAT,AR
+AR011D.wav,Disgust,AR08,M,N/A,ACT,AR
+AR012D.wav,Disgust,AR08,M,N/A,ACT,AR
+AR013D.wav,Disgust,AR05,M,N/A,ACT,AR
+AR014D.wav,Disgust,AR11,M,N/A,ACT,AR
+AR015D.wav,Disgust,AR11,M,N/A,ACT,AR
+AR016D.wav,Disgust,AR23,F,https://youtu.be/qJSuktl-ZXY?t=599,NAT,AR
+AR017D.wav,Disgust,AR23,F,https://youtu.be/qJSuktl-ZXY?t=739,NAT,AR
+AR018D.wav,Disgust,AR22,F,https://youtu.be/D3LhNZ0BGsc?t=143,NAT,AR
+AR019D.wav,Disgust,AR22,F,https://youtu.be/D3LhNZ0BGsc?t=305,NAT,AR
+AR020D.wav,Disgust,AR01,F,N/A,ACT,AR
+AR001E.wav,Exhilaration,AR03,F,N/A,ACT,AR
+AR002E.wav,Exhilaration,AR03,F,N/A,ACT,AR
+AR003E.wav,Exhilaration,AR03,F,N/A,ACT,AR
+AR004E.wav,Exhilaration,AR04,M,N/A,ACT,AR
+AR005E.wav,Exhilaration,AR03,F,N/A,ACT,AR
+AR006E.wav,Exhilaration,AR10,F,N/A,ACT,AR
+AR007E.wav,Exhilaration,AR10,F,N/A,ACT,AR
+AR008E.wav,Exhilaration,AR14,M,https://youtu.be/hGbDJDzKD2c?t=2769,NAT,AR
+AR009E.wav,Exhilaration,AR14,M,https://youtu.be/hGbDJDzKD2c?t=3944,NAT,AR
+AR010E.wav,Exhilaration,AR13,F,N/A,ACT,AR
+AR011E.wav,Exhilaration,AR15,M,https://youtu.be/p7LSv3X2SKw?t=808,NAT,AR
+AR012E.wav,Exhilaration,AR06,M,https://youtu.be/nbVbPA3tsIM?t=1565,NAT,AR
+AR013E.wav,Exhilaration,AR02,M,N/A,ACT,AR
+AR014E.wav,Exhilaration,AR02,M,N/A,ACT,AR
+AR015E.wav,Exhilaration,AR07,F,N/A,ACT,AR
+AR016E.wav,Exhilaration,AR23,F,https://youtu.be/40zpdjLzmUQ?t=148,NAT,AR
+AR017E.wav,Exhilaration,AR16,M,https://youtu.be/40zpdjLzmUQ?t=604,NAT,AR
+AR018E.wav,Exhilaration,AR16,M,https://youtu.be/40zpdjLzmUQ?t=604,NAT,AR
+AR019E.wav,Exhilaration,AR22,F,https://youtu.be/40zpdjLzmUQ?t=633,NAT,AR
+AR020E.wav,Exhilaration,AR22,F,https://youtu.be/Gx2FS1hsBFA?t=338,NAT,AR
+AR001F.wav,Fear,AR17,F,https://youtu.be/QMWKRuceIPM?t=281,ACT,AR
+AR002F.wav,Fear,AR09,F,https://youtu.be/iKJoNQx7c-I?t=320,ACT,AR
+AR003F.wav,Fear,AR17,F,https://youtu.be/qH57cHjdlS4?t=80,ACT,AR
+AR004F.wav,Fear,AR13,F,N/A,ACT,AR
+AR005F.wav,Fear,AR01,F,N/A,ACT,AR
+AR006F.wav,Fear,AR09,F,https://youtu.be/iKJoNQx7c-I?t=320,ACT,AR
+AR007F.wav,Fear,AR03,F,N/A,ACT,AR
+AR008F.wav,Fear,AR03,F,N/A,ACT,AR
+AR009F.wav,Fear,AR03,F,N/A,ACT,AR
+AR010F.wav,Fear,AR10,F,N/A,ACT,AR
+AR011F.wav,Fear,AR10,F,N/A,ACT,AR
+AR012F.wav,Fear,AR10,F,N/A,ACT,AR
+AR013F.wav,Fear,AR07,F,N/A,ACT,AR
+AR014F.wav,Fear,AR04,M,https://youtu.be/Gx2FS1hsBFA?t=297,NAT,AR
+AR015F.wav,Fear,AR11,M,N/A,ACT,AR
+AR016F.wav,Fear,AR01,F,N/A,ACT,AR
+AR017F.wav,Fear,AR01,F,N/A,ACT,AR
+AR018F.wav,Fear,AR01,F,N/A,ACT,AR
+AR019F.wav,Fear,AR18,F,https://youtu.be/Kt3ZZRwC_x4?t=244,NAT,AR
+AR020F.wav,Fear,AR19,F,https://youtu.be/Kt3ZZRwC_x4?t=458,NAT,AR
+AR001G.wav,Gustatory Pleasure,AR02,M,N/A,ACT,AR
+AR002G.wav,Gustatory Pleasure,AR02,M,N/A,ACT,AR
+AR003G.wav,Gustatory Pleasure,AR10,F,N/A,ACT,AR
+AR004G.wav,Gustatory Pleasure,AR10,F,N/A,ACT,AR
+AR005G.wav,Gustatory Pleasure,AR10,F,N/A,ACT,AR
+AR006G.wav,Gustatory Pleasure,AR10,F,N/A,ACT,AR
+AR007G.wav,Gustatory Pleasure,AR07,F,N/A,ACT,AR
+AR008G.wav,Gustatory Pleasure,AR07,F,N/A,ACT,AR
+AR009G.wav,Gustatory Pleasure,AR05,M,N/A,ACT,AR
+AR010G.wav,Gustatory Pleasure,AR05,M,N/A,ACT,AR
+AR011G.wav,Gustatory Pleasure,AR23,F,https://youtu.be/Jw7qcfJEW8k?t=108,NAT,AR
+AR012G.wav,Gustatory Pleasure,AR23,F,https://youtu.be/Jw7qcfJEW8k?t=133,NAT,AR
+AR013G.wav,Gustatory Pleasure,AR23,F,https://youtu.be/Jw7qcfJEW8k?t=287,NAT,AR
+AR014G.wav,Gustatory Pleasure,AR23,F,https://youtu.be/qJSuktl-ZXY?t=575,NAT,AR
+AR015G.wav,Gustatory Pleasure,AR01,F,N/A,ACT,AR
+AR016G.wav,Gustatory Pleasure,AR01,F,N/A,ACT,AR
+AR017G.wav,Gustatory Pleasure,AR22,F,https://youtu.be/D3LhNZ0BGsc?t=230,NAT,AR
+AR018G.wav,Gustatory Pleasure,AR04,M,https://youtu.be/D3LhNZ0BGsc?t=299,NAT,AR
+AR019G.wav,Gustatory Pleasure,AR20,M,https://youtu.be/thVFlTF2rvc?t=238,NAT,AR
+AR020G.wav,Gustatory Pleasure,AR21,M,https://youtu.be/thVFlTF2rvc?t=393,NAT,AR
+AR001IB.wav,Indifference / Boredom,AR03,F,N/A,ACT,AR
+AR002IB.wav,Indifference / Boredom,AR03,F,N/A,ACT,AR
+AR003IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR004IB.wav,Indifference / Boredom,AR22,F,https://youtu.be/40zpdjLzmUQ?t=129,NAT,AR
+AR005IB.wav,Indifference / Boredom,AR08,M,N/A,ACT,AR
+AR006IB.wav,Indifference / Boredom,AR08,M,N/A,ACT,AR
+AR007IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR008IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR009IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR010IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR011IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR012IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR013IB.wav,Indifference / Boredom,AR12,M,N/A,ACT,AR
+AR014IB.wav,Indifference / Boredom,AR01,F,N/A,ACT,AR
+AR015IB.wav,Indifference / Boredom,AR13,F,N/A,ACT,AR
+AR016IB.wav,Indifference / Boredom,AR13,F,N/A,ACT,AR
+AR017IB.wav,Indifference / Boredom,AR13,F,N/A,ACT,AR
+AR018IB.wav,Indifference / Boredom,AR24,M,N/A,ACT,AR
+AR019IB.wav,Indifference / Boredom,AR25,F,N/A,ACT,AR
+AR020IB.wav,Indifference / Boredom,AR02,M,N/A,ACT,AR
+AR001N.wav,Neutral,AR22,F,N/A,NAT,AR
+AR002N.wav,Neutral,AR04,M,N/A,NAT,AR
+AR003N.wav,Neutral,AR22,F,N/A,NAT,AR
+AR004N.wav,Neutral,AR22,F,N/A,NAT,AR
+AR005N.wav,Neutral,AR04,M,N/A,NAT,AR
+AR006N.wav,Neutral,AR06,M,N/A,NAT,AR
+AR007N.wav,Neutral,AR04,M,N/A,NAT,AR
+AR008N.wav,Neutral,AR04,M,N/A,NAT,AR
+AR009N.wav,Neutral,AR27,M,https://youtu.be/2QfXJX8hj0I?t=124,NAT,AR
+AR010N.wav,Neutral,AR28,M,https://youtu.be/hGbDJDzKD2c?t=1258,NAT,AR
+AR011N.wav,Neutral,AR14,M,https://youtu.be/hGbDJDzKD2c?t=1393,NAT,AR
+AR012N.wav,Neutral,AR28,M,https://youtu.be/hGbDJDzKD2c?t=2050,NAT,AR
+AR013N.wav,Neutral,AR01,F,N/A,ACT,AR
+AR014N.wav,Neutral,AR29,M,https://youtu.be/GkF6Mi2Ot9U?t=498,NAT,AR
+AR015N.wav,Neutral,AR30,M,https://youtu.be/hS5zKijyYYc?t=325,NAT,AR
+AR016N.wav,Neutral,AR31,M,https://youtu.be/1FA-vmQcCCM?t=62,NAT,AR
+AR017N.wav,Neutral,AR26,M,https://youtu.be/ZQPO1JPhacg?t=697,NAT,AR
+AR018N.wav,Neutral,AR29,M,https://youtu.be/p7LSv3X2SKw?t=1066,NAT,AR
+AR019N.wav,Neutral,AR32,M,https://youtu.be/nbVbPA3tsIM?t=69,NAT,AR
+AR020N.wav,Neutral,AR32,M,https://youtu.be/nbVbPA3tsIM?t=189,NAT,AR
+AR001P.wav,Pain,AR03,F,N/A,ACT,AR
+AR002P.wav,Pain,AR03,F,N/A,ACT,AR
+AR003P.wav,Pain,AR03,F,N/A,ACT,AR
+AR004P.wav,Pain,AR10,F,N/A,ACT,AR
+AR005P.wav,Pain,AR10,F,N/A,ACT,AR
+AR006P.wav,Pain,AR10,F,N/A,ACT,AR
+AR007P.wav,Pain,AR10,F,N/A,ACT,AR
+AR008P.wav,Pain,AR07,F,N/A,ACT,AR
+AR009P.wav,Pain,AR08,M,N/A,ACT,AR
+AR010P.wav,Pain,AR05,M,N/A,ACT,AR
+AR011P.wav,Pain,AR05,M,N/A,ACT,AR
+AR012P.wav,Pain,AR05,M,N/A,ACT,AR
+AR013P.wav,Pain,AR05,M,N/A,ACT,AR
+AR014P.wav,Pain,AR13,F,N/A,ACT,AR
+AR015P.wav,Pain,AR05,M,N/A,ACT,AR
+AR016P.wav,Pain,AR01,F,N/A,ACT,AR
+AR017P.wav,Pain,AR01,F,N/A,ACT,AR
+AR018P.wav,Pain,AR33,M,https://youtu.be/-YxoRS-O-Qo?t=666,NAT,AR
+AR019P.wav,Pain,AR12,M,N/A,ACT,AR
+AR020P.wav,Pain,AR12,M,N/A,ACT,AR
+AR001R.wav,Relief,AR06,M,https://youtu.be/nbVbPA3tsIM?t=435,NAT,AR
+AR002R.wav,Relief,AR06,M,https://youtu.be/nbVbPA3tsIM?t=2037,NAT,AR
+AR003R.wav,Relief,AR03,F,N/A,ACT,AR
+AR004R.wav,Relief,AR10,F,N/A,ACT,AR
+AR005R.wav,Relief,AR07,F,N/A,ACT,AR
+AR006R.wav,Relief,AR01,F,N/A,ACT,AR
+AR007R.wav,Relief,AR01,F,N/A,ACT,AR
+AR008R.wav,Relief,AR01,F,N/A,ACT,AR
+AR009R.wav,Relief,AR01,F,N/A,ACT,AR
+AR010R.wav,Relief,AR01,F,N/A,ACT,AR
+AR011R.wav,Relief,AR22,F,https://youtu.be/ClIeaxljjuA?t=813,NAT,AR
+AR012R.wav,Relief,AR34,M,https://youtu.be/TavOnJG1BQ8?t=86,NAT,AR
+AR013R.wav,Relief,AR33,M,https://youtu.be/-YxoRS-O-Qo?t=517,NAT,AR
+AR014R.wav,Relief,AR13,F,N/A,ACT,AR
+AR015R.wav,Relief,AR13,F,N/A,ACT,AR
+AR016R.wav,Relief,AR13,F,N/A,ACT,AR
+AR017R.wav,Relief,AR13,F,N/A,ACT,AR
+AR018R.wav,Relief,AR13,F,N/A,ACT,AR
+AR019R.wav,Relief,AR10,F,N/A,ACT,AR
+AR020R.wav,Relief,AR10,F,N/A,ACT,AR
+AR001SD.wav,Sadness/disappointment ,AR35,M,https://youtu.be/8GxKVsvYim0?t=111,ACT,AR
+AR002SD.wav,Sadness/disappointment ,AR35,M,https://youtu.be/ogmPOMbU6H4?t=226,ACT,AR
+AR003SD.wav,Sadness/disappointment ,AR04,M,N/A,NAT,AR
+AR004SD.wav,Sadness/disappointment ,AR03,F,N/A,ACT,AR
+AR005SD.wav,Sadness/disappointment ,AR06,M,https://youtu.be/hGbDJDzKD2c?t=1212,NAT,AR
+AR006SD.wav,Sadness/disappointment ,AR32,M,https://youtu.be/nbVbPA3tsIM?t=1029,NAT,AR
+AR007SD.wav,Sadness/disappointment ,AR02,M,N/A,ACT,AR
+AR008SD.wav,Sadness/disappointment ,AR02,M,N/A,ACT,AR
+AR009SD.wav,Sadness/disappointment ,AR02,M,N/A,ACT,AR
+AR010SD.wav,Sadness/disappointment ,AR10,F,N/A,ACT,AR
+AR011SD.wav,Sadness/disappointment ,AR10,F,N/A,ACT,AR
+AR012SD.wav,Sadness/disappointment ,AR07,F,N/A,ACT,AR
+AR013SD.wav,Sadness/disappointment ,AR05,M,N/A,ACT,AR
+AR014SD.wav,Sadness/disappointment ,AR05,M,N/A,ACT,AR
+AR015SD.wav,Sadness/disappointment ,AR05,M,N/A,ACT,AR
+AR016SD.wav,Sadness/disappointment ,AR23,F,https://youtu.be/Jw7qcfJEW8k?t=389,NAT,AR
+AR017SD.wav,Sadness/disappointment ,AR01,F,N/A,ACT,AR
+AR018SD.wav,Sadness/disappointment ,AR12,M,N/A,ACT,AR
+AR019SD.wav,Sadness/disappointment ,AR13,F,N/A,ACT,AR
+AR020SD.wav,Sadness/disappointment ,AR01,F,N/A,ACT,AR
+AR001SS.wav,Surprise/Shock,AR35,M,https://youtu.be/-vYIUUQeqGE?t=139,NAT,AR
+AR002SS.wav,Surprise/Shock,AR17,F,https://youtu.be/T513G5PDrrM?t=85,NAT,AR
+AR003SS.wav,Surprise/Shock,AR36,F,https://youtu.be/QOjSOycpd6c?t=179,NAT,AR
+AR004SS.wav,Surprise/Shock,AR01,F,N/A,ACT,AR
+AR005SS.wav,Surprise/Shock,AR16,M,N/A,ACT,AR
+AR006SS.wav,Surprise/Shock,AR03,F,N/A,ACT,AR
+AR007SS.wav,Surprise/Shock,AR22,F,https://youtu.be/VIsMvO89-2g?t=587,ACT,AR
+AR008SS.wav,Surprise/Shock,AR04,M,N/A,NAT,AR
+AR009SS.wav,Surprise/Shock,AR03,F,N/A,ACT,AR
+AR010SS.wav,Surprise/Shock,AR03,F,N/A,ACT,AR
+AR011SS.wav,Surprise/Shock,AR22,F,https://youtu.be/ClIeaxljjuA?t=86,NAT,AR
+AR012SS.wav,Surprise/Shock,AR14,M,https://youtu.be/hGbDJDzKD2c?t=1694,NAT,AR
+AR013SS.wav,Surprise/Shock,AR29,M,https://youtu.be/GkF6Mi2Ot9U?t=197,NAT,AR
+AR014SS.wav,Surprise/Shock,AR31,M,https://youtu.be/1FA-vmQcCCM?t=115,NAT,AR
+AR015SS.wav,Surprise/Shock,AR26,M,https://youtu.be/ZQPO1JPhacg?t=253,NAT,AR
+AR016SS.wav,Surprise/Shock,AR26,M,https://youtu.be/ZQPO1JPhacg?t=266,NAT,AR
+AR017SS.wav,Surprise/Shock,AR06,M,https://youtu.be/nbVbPA3tsIM?t=2647,NAT,AR
+AR018SS.wav,Surprise/Shock,AR06,M,https://youtu.be/nbVbPA3tsIM?t=3010,NAT,AR
+AR019SS.wav,Surprise/Shock,AR02,M,N/A,ACT,AR
+AR020SS.wav,Surprise/Shock,AR02,M,N/A,ACT,AR
