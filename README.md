@@ -25,7 +25,8 @@ emotion detection in interjections across three languages:
 - **Dataset Size:** Each label has **50 clips per language**, for a total of 1,800 annotated clips.  
 
 ## Contents
-- `annotations.csv` – emotion labels and metadata for each clip  
+- `annotations.csv` – emotion labels
+- INTERX-12_FULL.cvs - the metadata for each clip  
 - `scripts/` – analysis and feature extraction scripts  
 - `README.md` – dataset documentation  
 
